@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NamoCode.Game.Class.Screens;
+using Microsoft.Xna.Framework;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -17,5 +18,8 @@ namespace DeadLineGames.MIWIGD.Screens
     /// </remarks>
     public class ForthScreen : Screen
     {
+        public ForthScreen(Game game)
+            : base(game)
+        { }
     }
 }

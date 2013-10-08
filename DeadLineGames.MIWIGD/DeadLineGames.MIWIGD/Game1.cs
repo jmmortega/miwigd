@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using NamoCode.Game.Class.Design.BackGrounds;
 using NamoCode.Game.Class.Design;
+using NamoCode.Game.Utils;
 
 namespace DeadLineGames.MIWIGD
 {
@@ -27,6 +28,15 @@ namespace DeadLineGames.MIWIGD
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            IsMouseVisible = false;
+
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 480;
+
+            DesignOptions.Bounds = new Bounds(52, 617, 38, 435, 52, 617, 38, 435);
+
+            BasicTextures.GraphicsManager = graphics;
+            BasicTextures.ContentManager = Content;
         }
 
         /// <summary>
@@ -88,7 +98,7 @@ namespace DeadLineGames.MIWIGD
         /// <param name="gameTime">Proporciona una instantánea de los valores de tiempo.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: agregue aquí el código de dibujo
 
