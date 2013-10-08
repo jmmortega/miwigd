@@ -8,6 +8,8 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using NamoCode.Game.Class.Design.BackGrounds;
+using NamoCode.Game.Class.Design;
 
 namespace DeadLineGames.MIWIGD
 {
@@ -18,6 +20,8 @@ namespace DeadLineGames.MIWIGD
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        private BackGround m_Fondo;
 
         public Game1()
         {
@@ -34,6 +38,9 @@ namespace DeadLineGames.MIWIGD
         protected override void Initialize()
         {
             // TODO: agregue aquí su lógica de inicialización
+            m_Fondo = new BackGround(
+                   base.Content.Load<Texture2D>("Common/tv"),
+                   DesignOptions.Bounds);
 
             base.Initialize();
         }
@@ -84,6 +91,8 @@ namespace DeadLineGames.MIWIGD
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: agregue aquí el código de dibujo
+
+            m_Fondo.Draw(this.spriteBatch);
 
             base.Draw(gameTime);
         }

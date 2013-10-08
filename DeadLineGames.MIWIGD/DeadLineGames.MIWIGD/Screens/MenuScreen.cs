@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using NamoCode.Game.Class.Screens;
+using Microsoft.Xna.Framework;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -13,6 +14,32 @@ namespace DeadLineGames.MIWIGD.Screens
     /// </summary>
     public class MenuScreen : Screen
     {
+
+
+
+        public MenuScreen(Game game)
+            : base(game)
+        { }
+
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
+
+        protected override void GoBack()
+        {
+            base.GoBack();
+        }
+
+        public override void Update(TimeSpan elapsed)
+        {
+            base.Update(elapsed);
+        }
+
+        public override void Draw()
+        {
+            base.Draw();
+        }
 
     }
 }
