@@ -8,6 +8,11 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+using NamoCode.Game.Class.Design.BackGrounds;
+using NamoCode.Game.Class.Design;
+using NamoCode.Game.Utils;
+using NamoCode.Game.Class.Screens;
+using DeadLineGames.MIWIGD.Screens;
 
 namespace DeadLineGames.MIWIGD
 {
@@ -19,10 +24,21 @@ namespace DeadLineGames.MIWIGD
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        private BackGround m_Fondo;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            IsMouseVisible = false;
+
+            graphics.PreferredBackBufferWidth = 800;
+            graphics.PreferredBackBufferHeight = 480;
+
+            DesignOptions.Bounds = new Bounds(52, 617, 38, 435, 52, 617, 38, 435);
+
+            BasicTextures.GraphicsManager = graphics;
+            BasicTextures.ContentManager = Content;
         }
 
         /// <summary>
@@ -34,8 +50,13 @@ namespace DeadLineGames.MIWIGD
         protected override void Initialize()
         {
             // TODO: agregue aquí su lógica de inicialización
+            m_Fondo = new BackGround(
+                   base.Content.Load<Texture2D>("Common/tv"),
+                   DesignOptions.Bounds);
 
-            base.Initialize();
+            base.Initialize(); 
+            
+            ScreenManager.TransitionTo("Menu");
         }
 
         /// <summary>
@@ -48,6 +69,8 @@ namespace DeadLineGames.MIWIGD
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content para cargar aquí el contenido del juego
+            ScreenManager.AddScreen("Menu", new MenuScreen(this));
+            ScreenManager.AddScreen("First", new FirstScreen(this));
         }
 
         /// <summary>
@@ -71,7 +94,7 @@ namespace DeadLineGames.MIWIGD
                 this.Exit();
 
             // TODO: agregue aquí su lógica de actualización
-
+            ScreenManager.CurrentScreen.Update(gameTime.ElapsedGameTime);
             base.Update(gameTime);
         }
 
@@ -81,9 +104,11 @@ namespace DeadLineGames.MIWIGD
         /// <param name="gameTime">Proporciona una instantánea de los valores de tiempo.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: agregue aquí el código de dibujo
+            ScreenManager.CurrentScreen.Draw();
+            m_Fondo.Draw(this.spriteBatch);
 
             base.Draw(gameTime);
         }

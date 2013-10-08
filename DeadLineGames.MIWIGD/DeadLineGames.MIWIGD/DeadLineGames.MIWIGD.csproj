@@ -65,6 +65,10 @@
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="mscorlib" />
+    <Reference Include="NamoCode.Game, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>NamoCode\NamoCode.Game.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -110,12 +114,9 @@
     <Content Include="GameThumbnail.png">
       <XnaPlatformSpecific>true</XnaPlatformSpecific>
     </Content>
+    <Content Include="NamoCode\NamoCode.Game.dll" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\NamoCodeGame\NamoCode.Game\NamoCode.Game\NamoCode.Game.csproj">
-      <Project>{EE042BCA-6FBF-4FF8-B304-7C88B095A7B6}</Project>
-      <Name>NamoCode.Game</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DeadLineGames.MIWIGDContent\DeadLineGames.MIWIGDContent.contentproj">
       <Name>DeadLineGames.MIWIGDContent</Name>
       <XnaReferenceType>Content</XnaReferenceType>
