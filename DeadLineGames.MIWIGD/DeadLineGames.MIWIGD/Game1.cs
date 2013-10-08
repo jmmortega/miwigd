@@ -11,6 +11,8 @@ using Microsoft.Xna.Framework.Media;
 using NamoCode.Game.Class.Design.BackGrounds;
 using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
+using NamoCode.Game.Class.Screens;
+using DeadLineGames.MIWIGD.Screens;
 
 namespace DeadLineGames.MIWIGD
 {
@@ -52,7 +54,9 @@ namespace DeadLineGames.MIWIGD
                    base.Content.Load<Texture2D>("Common/tv"),
                    DesignOptions.Bounds);
 
-            base.Initialize();
+            base.Initialize(); 
+            
+            ScreenManager.TransitionTo("Menu");
         }
 
         /// <summary>
@@ -65,6 +69,8 @@ namespace DeadLineGames.MIWIGD
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content para cargar aquí el contenido del juego
+            ScreenManager.AddScreen("Menu", new MenuScreen(this));
+            ScreenManager.AddScreen("First", new FirstScreen(this));
         }
 
         /// <summary>
@@ -88,7 +94,7 @@ namespace DeadLineGames.MIWIGD
                 this.Exit();
 
             // TODO: agregue aquí su lógica de actualización
-
+            ScreenManager.CurrentScreen.Update(gameTime.ElapsedGameTime);
             base.Update(gameTime);
         }
 
@@ -101,7 +107,7 @@ namespace DeadLineGames.MIWIGD
             GraphicsDevice.Clear(Color.Black);
 
             // TODO: agregue aquí el código de dibujo
-
+            ScreenManager.CurrentScreen.Draw();
             m_Fondo.Draw(this.spriteBatch);
 
             base.Draw(gameTime);
