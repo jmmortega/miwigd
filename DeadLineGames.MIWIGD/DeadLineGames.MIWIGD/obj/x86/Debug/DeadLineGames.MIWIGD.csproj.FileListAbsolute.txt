@@ -1,0 +1,2 @@
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csprojResolveAssemblyReference.cache
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
