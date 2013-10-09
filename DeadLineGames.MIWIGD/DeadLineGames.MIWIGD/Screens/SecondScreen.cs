@@ -82,31 +82,40 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public void checkCollisions()
         {
-            List<Direction> collisions = new List<Direction>();
-            bool colExists = false;
-            foreach (Wall w in Map.Instance)
-            {
-                if (w.HaveColision(link))
-                {
-                    foreach (Direction d in link.blockedDir)
-                    {
-                        if (d == link.dir)
-                        {
-                            colExists = true;
-                            break;
-                        }
-                    }
-                    if(!colExists)
-                        collisions.Add(link.dir);
-                }
-            }
 
-            if (!colExists)
+            if (link.HaveColision(sword))
             {
-                if (collisions.Count > 0)
-                    link.blockedDir = collisions;
-                else
-                    link.blockedDir.Clear();
+                link.catchSword();
+                sword.SetPosicion(link.Posicion.X - 5, link.Posicion.Y - sword.Height);
+            }
+            else
+            {
+                List<Direction> collisions = new List<Direction>();
+                bool colExists = false;
+                foreach (Wall w in Map.Instance)
+                {
+                    if (w.HaveColision(link))
+                    {
+                        foreach (Direction d in link.blockedDir)
+                        {
+                            if (d == link.dir)
+                            {
+                                colExists = true;
+                                break;
+                            }
+                        }
+                        if (!colExists)
+                            collisions.Add(link.dir);
+                    }
+                }
+
+                if (!colExists)
+                {
+                    if (collisions.Count > 0)
+                        link.blockedDir = collisions;
+                    else
+                        link.blockedDir.Clear();
+                }
             }
         }
 

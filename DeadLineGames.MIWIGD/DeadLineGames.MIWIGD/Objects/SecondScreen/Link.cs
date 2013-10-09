@@ -19,6 +19,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
         public Direction dir;
         public List<Direction> blockedDir;
+        public bool HaveSword = false;
 
         public Link(Vector2 posicion)
             : base(BasicTextures.CargarTextura("SecondScreen/Link", "Link"),
@@ -32,8 +33,11 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
         public override void Update(TimeSpan elapsed)
         {
-            mover();
-            orientar();
+            if (!HaveSword)
+            {
+                mover();
+                orientar();
+            }
             base.Update(elapsed);
         }
 
@@ -113,6 +117,13 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
                     this.Frames.ChangeRow(3);
                     break;
             }
+        }
+
+        public void catchSword()
+        {
+            this.Texture = BasicTextures.CargarTextura("SecondScreen/LinkSword", "LinkSword");
+            this.Frames = new FrameRateInfo(1, 0, 1, false);
+            HaveSword = true;
         }
 
     }
