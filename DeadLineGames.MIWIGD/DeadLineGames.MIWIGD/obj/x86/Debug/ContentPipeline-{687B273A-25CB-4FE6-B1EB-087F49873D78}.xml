@@ -397,6 +397,34 @@
       <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\MarketingTimeFont.xnb</Output>
       <Time>2013-10-04T17:47:03.0953247+02:00</Time>
     </Item>
+    <Item>
+      <Source>Common\tv.png</Source>
+      <Name>Common\tv</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Common\tv.xnb</Output>
+      <Time>2013-10-08T23:31:57.7449642+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuScreen\PressStart.png</Source>
+      <Name>MenuScreen\PressStart</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\PressStart.xnb</Output>
+      <Time>2013-10-08T23:31:57.7549644+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuScreen\TitleTheme.mp3</Source>
+      <Name>MenuScreen\TitleTheme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb</Output>
+      <Extra>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma</Extra>
+      <Time>2013-10-08T23:31:57.7629679+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>
