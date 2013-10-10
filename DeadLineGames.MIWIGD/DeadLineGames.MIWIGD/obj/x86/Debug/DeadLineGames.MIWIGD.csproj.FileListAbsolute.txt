@@ -60,3 +60,7 @@ C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.exe
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.pdb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb

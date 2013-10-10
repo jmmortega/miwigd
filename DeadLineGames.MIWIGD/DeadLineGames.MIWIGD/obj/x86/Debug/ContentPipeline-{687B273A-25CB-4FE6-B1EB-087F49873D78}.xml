@@ -461,6 +461,42 @@
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma</Extra>
       <Time>2013-10-08T21:20:05.6337868+02:00</Time>
     </Item>
+    <Item>
+      <Source>SecondScreen\Arcade30.png</Source>
+      <Name>SecondScreen\Arcade30</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb</Output>
+      <Time>2013-10-10T14:02:22.4404391+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\ItemObtained.wav</Source>
+      <Name>SecondScreen\ItemObtained</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb</Output>
+      <Time>2013-10-10T14:15:34.6538896+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\ItemReceived.wav</Source>
+      <Name>SecondScreen\ItemReceived</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb</Output>
+      <Time>2013-10-10T14:15:33.5653806+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\Typing.wav</Source>
+      <Name>SecondScreen\Typing</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb</Output>
+      <Time>2013-10-10T14:27:28.8606705+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>

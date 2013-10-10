@@ -50,4 +50,8 @@ Content\SecondScreen\Fire.xnb
 Content\SecondScreen\LinkSword.xnb
 Content\MenuScreen\TitleTheme.xnb
 Content\MenuScreen\TitleTheme.wma
+Content\SecondScreen\Arcade30.xnb
+Content\SecondScreen\ItemObtained.xnb
+Content\SecondScreen\ItemReceived.xnb
+Content\SecondScreen\Typing.xnb
 Content\SecondScreen\0.map

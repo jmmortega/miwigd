@@ -17,11 +17,13 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
         private const float MOVIMIENTO = 2.5f;
 
+        private float minBoundY = 0;
+
         public Direction dir;
         public List<Direction> blockedDir;
         public bool HaveSword = false;
 
-        public Link(Vector2 posicion)
+        public Link(Vector2 posicion, float minBoundY)
             : base(BasicTextures.CargarTextura("SecondScreen/Link", "Link"),
             "Link",
             new FrameRateInfo(2, 0.20f, 4, false),
@@ -29,6 +31,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
         {
             dir = Direction.Up;
             blockedDir = new List<Direction>();
+            this.minBoundY = minBoundY;
         }
 
         public override void Update(TimeSpan elapsed)
@@ -95,7 +98,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
             if (X > DesignOptions.Bounds.MinX && X < (DesignOptions.Bounds.MaxX - this.Width))
                 this.Posicion = new Vector2(X, this.Posicion.Y);
-            if (Y > DesignOptions.Bounds.MinY && Y < (DesignOptions.Bounds.MaxY - this.Height))
+            if (Y > minBoundY && Y < (DesignOptions.Bounds.MaxY - this.Height))
                 this.Posicion = new Vector2(this.Posicion.X, Y);
             
         }
