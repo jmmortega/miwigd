@@ -48,7 +48,8 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
         {
 
             float X = this.Posicion.X, Y = this.Posicion.Y;
-            if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickUp))
+            if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickUp) ||
+                InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Up))
             {
                 dir = Direction.Up;
                 bool block = false;
@@ -58,7 +59,8 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
                 if(!block)
                     Y -= MOVIMIENTO;
             }
-            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickDown))
+            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickDown) ||
+                InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Down))
             {
                 dir = Direction.Down;
                 bool block = false;
@@ -68,7 +70,8 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
                 if (!block)
                     Y += MOVIMIENTO;
             }
-            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft))
+            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft) ||
+                InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Left))
             {
                 dir = Direction.Left;
                 bool block = false;
@@ -78,7 +81,8 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
                 if (!block)
                     X -= MOVIMIENTO;
             }
-            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickRight))
+            else if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickRight) ||
+                InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Right))
             {
                 dir = Direction.Right;
                 bool block = false;
