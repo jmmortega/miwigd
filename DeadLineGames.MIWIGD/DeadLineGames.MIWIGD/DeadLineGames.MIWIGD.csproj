@@ -79,11 +79,16 @@
     <Compile Include="Objects\EigthScreen\MailBox.cs" />
     <Compile Include="Objects\EigthScreen\NewsPaper.cs" />
     <Compile Include="Objects\EigthScreen\PaperBoy.cs" />
+    <Compile Include="Objects\Enums.cs" />
     <Compile Include="Objects\FirstScreen\Ash.cs" />
     <Compile Include="Objects\FirstScreen\Mother.cs" />
     <Compile Include="Objects\ForthScreen\BadGuy.cs" />
     <Compile Include="Objects\ForthScreen\LightObject.cs" />
+    <Compile Include="Objects\SecondScreen\Sword.cs" />
+    <Compile Include="Objects\SecondScreen\OldMan.cs" />
+    <Compile Include="Objects\SecondScreen\Wall.cs" />
     <Compile Include="Objects\SecondScreen\Link.cs" />
+    <Compile Include="Objects\SecondScreen\Map.cs" />
     <Compile Include="Objects\SecondScreen\Weapon.cs" />
     <Compile Include="Objects\SeventhScreen\CoinBox.cs" />
     <Compile Include="Objects\SeventhScreen\Mario.cs" />

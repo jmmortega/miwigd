@@ -37,7 +37,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             title = new AnimatedElement(BasicTextures.CrearCuadrado(480, 280, Color.Green),
                 "title",
-                new Vector2(94.50f, DesignOptions.Bounds.MinY - 285),
+                new Vector2(94.50f, DesignOptions.Bounds.MinY - 280),
                 new FrameRateInfo());
 
             start = new AnimatedElement(base.Content.Load<Texture2D>("MenuScreen/PressStart"),
@@ -62,7 +62,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Update(TimeSpan elapsed)
         {
-            if (title.Posicion.Y <= DesignOptions.Bounds.MinY + 25)
+            if (title.Posicion.Y <= DesignOptions.Bounds.MinY + 30)
             {
                 if (timetoscroll % TIMESCROLL == 0)
                     title.Posicion = new Vector2(title.Posicion.X, title.Posicion.Y + 2);
@@ -73,7 +73,7 @@ namespace DeadLineGames.MIWIGD.Screens
             {
                 start.Visible = true;
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Start))
-                    ScreenManager.TransitionTo("First");
+                    ScreenManager.TransitionTo("Second");
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back))
                     this.GoBack();
             }

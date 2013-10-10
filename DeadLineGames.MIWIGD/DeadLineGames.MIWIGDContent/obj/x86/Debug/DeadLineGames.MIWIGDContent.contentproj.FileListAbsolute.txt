@@ -1,0 +1,2 @@
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGDContent\obj\x86\Debug\DeadLineGames.MIWIGDContent.contentprojResolveAssemblyReference.cache
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGDContent\obj\x86\Debug\DeadLineGames.MIWIGDContent.contentprojResolveAssemblyReference.cache

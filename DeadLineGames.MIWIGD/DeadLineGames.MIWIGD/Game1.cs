@@ -35,7 +35,7 @@ namespace DeadLineGames.MIWIGD
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 480;
 
-            DesignOptions.Bounds = new Bounds(52, 617, 38, 435, 52, 617, 38, 435);
+            DesignOptions.Bounds = new Bounds(50, 620, 35, 435, 50, 620, 35, 435);
 
             BasicTextures.GraphicsManager = graphics;
             BasicTextures.ContentManager = Content;
@@ -71,6 +71,7 @@ namespace DeadLineGames.MIWIGD
             // TODO: use this.Content para cargar aquí el contenido del juego
             ScreenManager.AddScreen("Menu", new MenuScreen(this));
             ScreenManager.AddScreen("First", new FirstScreen(this));
+            ScreenManager.AddScreen("Second", new SecondScreen(this));
         }
 
         /// <summary>
