@@ -72,10 +72,16 @@ namespace DeadLineGames.MIWIGD.Screens
             else
             {
                 start.Visible = true;
-                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Start))
+                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Start) ||
+                    InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Enter))
+                {
                     ScreenManager.TransitionTo("Second");
-                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back))
+                }
+                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back) ||
+                    InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Escape))
+                {
                     this.GoBack();
+                }
             }
 
             start.Update(elapsed);
