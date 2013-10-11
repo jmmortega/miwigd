@@ -126,3 +126,5 @@ E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\NamoCode.Game.dll
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.exe
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.pdb
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.Strings.resources
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csproj.GenerateResource.Cache
