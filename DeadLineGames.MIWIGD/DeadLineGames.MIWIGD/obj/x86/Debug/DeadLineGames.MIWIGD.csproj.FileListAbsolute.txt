@@ -1,5 +1,3 @@
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csprojResolveAssemblyReference.cache
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\Background.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\CharacterPresentation.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\Title.xnb
@@ -50,81 +48,18 @@ C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Link.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Fire.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\LinkSword.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\0.map
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\DeadLineGames.MIWIGD.exe
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\DeadLineGames.MIWIGD.pdb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\NamoCode.Game.dll
-C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csprojResolveAssemblyReference.cache
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.Strings.resources
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csproj.GenerateResource.Cache
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.exe
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.pdb
-C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb
-C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb
-C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb
-C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\CharacterPresentation.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\Title.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FirstScreen\Ash.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FirstScreen\House.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FirstScreen\Mom.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FirstScreen\Oaklindo.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FirstScreen\OaklindoDetail.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Bomb.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Boomerang.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\OldMan.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\RoomScreen.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Sword.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Zelda.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ThirdScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ThirdScreen\BadGuyShip.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ThirdScreen\GoodGuyShip.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ForthScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ForthScreen\BadGuy.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ForthScreen\HudFrame.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ForthScreen\Photo.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\ForthScreen\PhotoX.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\ButtonA.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\ButtonB.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\ButtonX.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\ButtonY.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\DeveloperSpriteSheet.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\LeftThumbStick.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\RightTumbStick.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Bug.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Cloud.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\CoinBlock.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Mario.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\House.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\MailBox.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\PaperBoy.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Background.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Finn.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Jake.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\MarketingTimeFont.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Common\tv.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\PressStart.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Wall.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Link.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Fire.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\LinkSword.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\0.map
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\DeadLineGames.MIWIGD.exe
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\DeadLineGames.MIWIGD.pdb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\NamoCode.Game.dll
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.exe
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.pdb
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.Strings.resources
-E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.csproj.GenerateResource.Cache
