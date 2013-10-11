@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\Title.xnb</Output>
-      <Time>2013-10-11T11:09:47.3246362+02:00</Time>
+      <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
       <Source>FirstScreen\Ash.png</Source>
@@ -80,7 +80,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Bomb.xnb</Output>
-      <Time>2013-10-11T12:37:03.0375174+02:00</Time>
+      <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
       <Source>SecondScreen\Boomerang.png</Source>
@@ -89,7 +89,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Boomerang.xnb</Output>
-      <Time>2013-10-11T12:35:38.1197363+02:00</Time>
+      <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
       <Source>SecondScreen\OldMan.png</Source>
@@ -452,15 +452,6 @@
       <Time>2013-10-09T21:04:10.3230532+02:00</Time>
     </Item>
     <Item>
-      <Source>SecondScreen\Arcade30.png</Source>
-      <Name>SecondScreen\Arcade30</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>FontTextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb</Output>
-      <Time>2013-10-10T14:02:22.4404391+02:00</Time>
-    </Item>
-    <Item>
       <Source>MenuScreen\TitleTheme.mp3</Source>
       <Name>MenuScreen\TitleTheme</Name>
       <Importer>Mp3Importer</Importer>
@@ -469,6 +460,15 @@
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb</Output>
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma</Extra>
       <Time>2013-10-08T21:20:05.6337868+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\Arcade30.png</Source>
+      <Name>SecondScreen\Arcade30</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Arcade30.xnb</Output>
+      <Time>2013-10-10T14:02:22.4404391+02:00</Time>
     </Item>
     <Item>
       <Source>SecondScreen\ItemObtained.wav</Source>
@@ -496,15 +496,6 @@
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb</Output>
       <Time>2013-10-10T14:27:28.8606705+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SecondScreen\LinkObject.png</Source>
-      <Name>SecondScreen\LinkObject</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\LinkObject.xnb</Output>
-      <Time>2013-10-11T12:12:28.5544081+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

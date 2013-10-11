@@ -35,7 +35,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Initialize()
         {
-            title = new AnimatedElement(BasicTextures.CrearCuadrado(480, 280, Color.Green),
+            title = new AnimatedElement(base.Content.Load<Texture2D>("MenuScreen/Title"),
                 "title",
                 new Vector2(94.50f, DesignOptions.Bounds.MinY - 280),
                 new FrameRateInfo());

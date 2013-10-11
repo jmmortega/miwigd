@@ -54,4 +54,5 @@ Content\MenuScreen\TitleTheme.wma
 Content\SecondScreen\ItemObtained.xnb
 Content\SecondScreen\ItemReceived.xnb
 Content\SecondScreen\Typing.xnb
+Content\SecondScreen\LinkObject.xnb
 Content\SecondScreen\0.map
