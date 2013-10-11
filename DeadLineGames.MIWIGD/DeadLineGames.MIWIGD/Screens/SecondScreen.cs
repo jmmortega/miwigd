@@ -38,13 +38,14 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private Link link;
         private OldMan oldMan;
-        private Sword sword;
         private List<AnimatedElement> fires;
         private ElementString type;
+        private AObjects Weapons;
 
         private int timeTyping;
         private int charType;
         private int goodByeOldMan;
+        private int weaponsCatch;
 
         public SecondScreen(Game game)
             : base(game)
@@ -54,7 +55,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             
             oldMan = new OldMan(new Vector2(319, DesignOptions.Bounds.MinY + 145));
-            sword = new Sword(new Vector2(328, oldMan.Posicion.Y + oldMan.Height + 20));
+
             fires = new List<AnimatedElement>();
             fires.Add(new AnimatedElement(base.Content.Load<Texture2D>("SecondScreen/Fire"),
                 "Fire1",
@@ -64,6 +65,20 @@ namespace DeadLineGames.MIWIGD.Screens
                 "Fire2",
                 new Vector2(oldMan.Posicion.X + oldMan.Width + 60, oldMan.Posicion.Y),
                 new FrameRateInfo(2, 0.30f)));
+
+            Weapons = new AObjects();
+            Weapons.Add(new Weapon(base.Content.Load<Texture2D>("SecondScreen/Boomerang"),
+                "Boomerang",
+                new Vector2(oldMan.Posicion.X - oldMan.Width - 49,
+                    oldMan.Posicion.Y + oldMan.Height + 28)));
+            Weapons.Add(new Weapon(base.Content.Load<Texture2D>("SecondScreen/Sword"),
+                "Sword",
+                new Vector2(328, oldMan.Posicion.Y + oldMan.Height + 20)));
+            Weapons.Add(new Weapon(base.Content.Load<Texture2D>("SecondScreen/Bomb"),
+                "Bomb",
+                new Vector2(oldMan.Posicion.X + oldMan.Width + 68,
+                    oldMan.Posicion.Y + oldMan.Height + 22)));
+
             link = new Link(new Vector2(323, DesignOptions.Bounds.MaxY - 32), oldMan.Posicion.Y + oldMan.Height);
 
             type = new ElementString(base.Content.Load<SpriteFont>("SecondScreen/Arcade30"), 
@@ -74,6 +89,7 @@ namespace DeadLineGames.MIWIGD.Screens
             charType = 0;
             timeTyping = 0;
             goodByeOldMan = 1;
+            weaponsCatch = 0;
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SecondScreen/Typing"), "Typing");
@@ -107,8 +123,23 @@ namespace DeadLineGames.MIWIGD.Screens
             {
                 link.Update(elapsed);
 
-                if (link.HaveSword)
+                if (weaponsCatch > 0 && !link.HaveWeapon)
                 {
+                    foreach (Weapon w in Weapons)
+                    {
+                        if (w.catched)
+                        {
+                            w.Dispose();
+                            Weapons.Remove(w);
+                            break;
+                        }
+                    }
+                }
+
+                if (weaponsCatch == 3)
+                {
+                    type.Visible = false;
+                    oldMan.Opacity = 0.85f;
                     if (goodByeOldMan % TIMETOSAYGOODBYE == 0)
                         oldMan.Dispose();
                     else
@@ -117,6 +148,8 @@ namespace DeadLineGames.MIWIGD.Screens
                             oldMan.Visible = !oldMan.Visible;
                         goodByeOldMan++;
                     }
+                    if (link.Posicion.Y + link.Height >= DesignOptions.Bounds.MaxY - 5)
+                        ScreenManager.TransitionTo("Menu");
                 }
 
                 fires.ForEach(x => x.Update(elapsed));
@@ -131,7 +164,7 @@ namespace DeadLineGames.MIWIGD.Screens
             Map.Instance.Draw(base.SpriteBatch);
             type.Draw(base.SpriteBatch);
             oldMan.Draw(base.SpriteBatch);
-            sword.Draw(base.SpriteBatch);
+            Weapons.ForEach(x => x.Draw(base.SpriteBatch));
             fires.ForEach(x => x.Draw(base.SpriteBatch));
             link.Draw(base.SpriteBatch);
             base.Draw();
@@ -139,17 +172,31 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public void checkCollisions()
         {
-
-            if (link.HaveColision(sword))
+            bool weaponCollision = false;
+            foreach (Weapon w in Weapons)
             {
-                link.catchSword();
-                sword.SetPosicion(link.Posicion.X - 3, link.Posicion.Y - sword.Height);
-                oldMan.Opacity = 0.85f;
-                type.Visible = false;
-                Player.Instance.Play("Obtained", 0.60f);
-                Player.Instance.Play("Received", 0.60f);
+                if (link.HaveColision(w))
+                {
+                    switch (w.Name)
+                    {
+                        case "Sword":
+                            link.catchWeapon(1);
+                            w.SetPosicion(link.Posicion.X - 3,
+                            link.Posicion.Y - w.Height);
+                            break;
+                        default: 
+                            link.catchWeapon(2);
+                            w.SetPosicion(link.Center.X - (w.Width / 2),
+                            link.Posicion.Y - w.Height);
+                            break;
+                    }
+                    w.catched = true;
+                    Player.Instance.Play("Obtained", 0.60f);
+                    Player.Instance.Play("Received", 0.60f);
+                    weaponsCatch++;
+                }
             }
-            else
+            if(!weaponCollision)
             {
                 List<Direction> collisions = new List<Direction>();
                 bool colExists = false;

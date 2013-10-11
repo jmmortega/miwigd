@@ -21,7 +21,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
         public Direction dir;
         public List<Direction> blockedDir;
-        public bool HaveSword = false;
+        public bool HaveWeapon = false;
 
         public Link(Vector2 posicion, float minBoundY)
             : base(BasicTextures.CargarTextura("SecondScreen/Link", "Link"),
@@ -36,10 +36,16 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
 
         public override void Update(TimeSpan elapsed)
         {
-            if (!HaveSword)
+            if (!HaveWeapon)
             {
                 mover();
                 orientar();
+            }
+            else
+            {
+                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.A) ||
+                    InputState.GetInputState().KeyboardState.IsKeyDown(Keys.A))
+                    catchWeapon(0);
             }
             base.Update(elapsed);
         }
@@ -126,11 +132,26 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
             }
         }
 
-        public void catchSword()
+        public void catchWeapon(int typeCatch)
         {
-            this.Texture = BasicTextures.CargarTextura("SecondScreen/LinkSword", "LinkSword");
-            this.Frames = new FrameRateInfo(1, 0, 1, false);
-            HaveSword = true;
+            switch (typeCatch)
+            {
+                case 0:
+                    this.Texture = BasicTextures.GetTexture("Link");
+                    this.Frames = new FrameRateInfo(2, 0.20f, 4, false);
+                    HaveWeapon = false;
+                    break;
+                case 1:
+                    this.Texture = BasicTextures.CargarTextura("SecondScreen/LinkSword", "LinkSword");
+                    this.Frames = new FrameRateInfo(1, 0, 1, false);
+                    HaveWeapon = true;
+                    break;
+                case 2:
+                    this.Texture = BasicTextures.CargarTextura("SecondScreen/LinkObject", "LinkObject");
+                    this.Frames = new FrameRateInfo(1, 0, 1, false);
+                    HaveWeapon = true;
+                    break;
+            }
         }
 
     }
