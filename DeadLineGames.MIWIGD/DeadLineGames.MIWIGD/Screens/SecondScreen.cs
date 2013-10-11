@@ -28,9 +28,10 @@ namespace DeadLineGames.MIWIGD.Screens
     /// </summary>
     public class SecondScreen : Screen
     {
-
+        /*
         private string FIRSTLINE = "IT'S DANGEROUS TO GO\n"
             + "  ALONE! TAKE THIS.";
+         */ 
         
         private const int TIMETOSAYGOODBYE = 100;
         private const int PARPADEO = 2;
@@ -92,11 +93,11 @@ namespace DeadLineGames.MIWIGD.Screens
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back))
                 this.GoMenu();
 
-            if (charType < FIRSTLINE.Length)
+            if (charType < Strings.SecondScreenDangerous.Length)
             {
                 if (timeTyping % 4 == 0)
                 {
-                    type.LabelContent += FIRSTLINE[charType];
+                    type.LabelContent += Strings.SecondScreenDangerous[charType];
                     Player.Instance.Play("Typing", 0.70f);
                     charType++;
                 }

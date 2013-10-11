@@ -1,0 +1,7 @@
+﻿Add all the strings text in Strings file. There are use this Key to store the Strings
+
+NUMBER_Screen_NameString.
+
+Like this --> SecondScreenDangerous
+
+If you need add returns carrier you should use Shift+Enter
