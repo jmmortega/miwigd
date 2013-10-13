@@ -16,5 +16,17 @@ namespace DeadLineGames.MIWIGD.Screens
         public FirstScreen(Game game)
             : base(game)
         { }
+
+        public override void Update(TimeSpan elapsed)
+        {
+            base.Update(elapsed);
+        }
+
+        public override void Draw()
+        {
+            base.Draw();
+        }
+
+
     }
 }

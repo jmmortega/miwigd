@@ -39,6 +39,8 @@ namespace DeadLineGames.MIWIGD
 
             BasicTextures.GraphicsManager = graphics;
             BasicTextures.ContentManager = Content;
+
+            graphics.IsFullScreen = true;
         }
 
         /// <summary>
