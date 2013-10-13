@@ -31,7 +31,7 @@ namespace DeadLineGames.MIWIGD
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
-            graphics.IsFullScreen = true;
+            //graphics.IsFullScreen = true;
 
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 480;

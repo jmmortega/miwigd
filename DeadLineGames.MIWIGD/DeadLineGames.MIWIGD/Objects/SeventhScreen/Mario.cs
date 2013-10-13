@@ -9,6 +9,7 @@ using NamoCode.Game.Utils;
 using NamoCode.Game.Class.Design;
 using NamoCode.Game.Class.Input;
 using Microsoft.Xna.Framework.Input;
+using NamoCode.Game.Class.Media;
 
 namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
 {
@@ -69,6 +70,9 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.A) ||
                 InputState.GetInputState().KeyboardState.IsKeyDown(Keys.A))
             {
+                if (jumpTime == 0)
+                    Player.Instance.Play("Jump");
+
                 if (jumpTime <= TOTALJUMPTIME)
                     jumpTime += 5;
                 switch (this.Frames.ActualFrameRow)
@@ -119,7 +123,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             {
                 if (jump++ <= jumpTime)
                 {
-                    posY = this.Posicion.Y - (4 - ((jumpTime * 3) / 100));
+                    posY = this.Posicion.Y - (6 - ((jump * 10) / 100));
                 }
                 else
                 {
@@ -135,9 +139,9 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         {
             float posY = this.Posicion.Y;
 
-            if (jump-- > -1)
+            if (--jump > 0)
             {
-                posY = this.Posicion.Y + (4 - ((jumpTime * 3) / 100));
+                posY = this.Posicion.Y + (6 - ((jump * 10) / 100));
             }
             else
             {
