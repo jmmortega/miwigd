@@ -31,6 +31,7 @@ namespace DeadLineGames.MIWIGD
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
+            //graphics.IsFullScreen = true;
 
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 480;
@@ -56,8 +57,10 @@ namespace DeadLineGames.MIWIGD
                    base.Content.Load<Texture2D>("Common/tv"),
                    DesignOptions.Bounds);
 
-            base.Initialize(); 
-            
+            String g = Strings.SecondScreenDangerous;
+
+            base.Initialize();
+
             ScreenManager.TransitionTo("Menu");
         }
 
@@ -74,6 +77,7 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Menu", new MenuScreen(this));
             ScreenManager.AddScreen("First", new FirstScreen(this));
             ScreenManager.AddScreen("Second", new SecondScreen(this));
+            ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
         }
 
         /// <summary>
@@ -93,7 +97,8 @@ namespace DeadLineGames.MIWIGD
         protected override void Update(GameTime gameTime)
         {
             // Permite salir del juego
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
+                || Keyboard.GetState(PlayerIndex.One).IsKeyDown(Keys.Escape))
                 this.Exit();
 
             // TODO: agregue aquí su lógica de actualización
