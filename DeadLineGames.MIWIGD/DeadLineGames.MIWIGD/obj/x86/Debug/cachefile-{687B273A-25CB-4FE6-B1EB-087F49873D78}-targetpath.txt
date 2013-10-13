@@ -55,4 +55,9 @@ Content\SecondScreen\ItemObtained.xnb
 Content\SecondScreen\ItemReceived.xnb
 Content\SecondScreen\Typing.xnb
 Content\SecondScreen\LinkObject.xnb
+Content\SeventhScreen\F1.xnb
+Content\SeventhScreen\F2.xnb
+Content\SeventhScreen\F3.xnb
+Content\SeventhScreen\F4.xnb
 Content\SecondScreen\0.map
+Content\SeventhScreen\0.map

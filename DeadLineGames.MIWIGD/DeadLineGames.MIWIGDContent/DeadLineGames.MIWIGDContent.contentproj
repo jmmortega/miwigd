@@ -298,6 +298,10 @@
       <Name>0</Name>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="SeventhScreen\0.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Name>0</Name>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SecondScreen\Wall.png">
@@ -356,6 +360,28 @@
   <ItemGroup>
     <Compile Include="SecondScreen\LinkObject.png">
       <Name>LinkObject</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SeventhScreen\F1.png">
+      <Name>F1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="SeventhScreen\F2.png">
+      <Name>F2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="SeventhScreen\F3.png">
+      <Name>F3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="SeventhScreen\F4.png">
+      <Name>F4</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

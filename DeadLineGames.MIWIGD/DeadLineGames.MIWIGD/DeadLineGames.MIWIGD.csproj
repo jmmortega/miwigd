@@ -91,7 +91,9 @@
     <Compile Include="Objects\SecondScreen\Map.cs" />
     <Compile Include="Objects\SecondScreen\Weapon.cs" />
     <Compile Include="Objects\SeventhScreen\CoinBox.cs" />
+    <Compile Include="Objects\SeventhScreen\SeventhMap.cs" />
     <Compile Include="Objects\SeventhScreen\Mario.cs" />
+    <Compile Include="Objects\SeventhScreen\Floor.cs" />
     <Compile Include="Objects\SixthScreen\Bug.cs" />
     <Compile Include="Objects\SixthScreen\Cross.cs" />
     <Compile Include="Strings.Designer.cs">

@@ -149,7 +149,7 @@ namespace DeadLineGames.MIWIGD.Screens
                         goodByeOldMan++;
                     }
                     if (link.Posicion.Y + link.Height >= DesignOptions.Bounds.MaxY - 5)
-                        ScreenManager.TransitionTo("Menu");
+                        ScreenManager.TransitionTo("Seventh");
                 }
 
                 fires.ForEach(x => x.Update(elapsed));

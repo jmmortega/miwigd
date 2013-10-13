@@ -323,7 +323,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Mario.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
+      <Time>2013-10-12T23:22:46.2674333+02:00</Time>
     </Item>
     <Item>
       <Source>EightScreen\Background.png</Source>
@@ -505,6 +505,42 @@
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\LinkObject.xnb</Output>
       <Time>2013-10-11T12:12:28.5544081+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\F1.png</Source>
+      <Name>SeventhScreen\F1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\F1.xnb</Output>
+      <Time>2013-10-12T16:27:42.68633+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\F2.png</Source>
+      <Name>SeventhScreen\F2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\F2.xnb</Output>
+      <Time>2013-10-12T16:27:42.6893301+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\F3.png</Source>
+      <Name>SeventhScreen\F3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\F3.xnb</Output>
+      <Time>2013-10-12T16:27:42.6933305+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\F4.png</Source>
+      <Name>SeventhScreen\F4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\F4.xnb</Output>
+      <Time>2013-10-12T16:27:42.6823296+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
