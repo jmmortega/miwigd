@@ -308,15 +308,6 @@
       <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\CoinBlock.png</Source>
-      <Name>SeventhScreen\CoinBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\CoinBlock.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
       <Source>SeventhScreen\Mario.png</Source>
       <Name>SeventhScreen\Mario</Name>
       <Importer>TextureImporter</Importer>
@@ -580,13 +571,22 @@
       <Time>2013-10-14T19:38:53.7470855+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\Flower.png</Source>
-      <Name>SeventhScreen\Flower</Name>
+      <Source>SeventhScreen\Coin.png</Source>
+      <Name>SeventhScreen\Coin</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Flower.xnb</Output>
-      <Time>2013-10-13T21:54:00.1920098+02:00</Time>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Coin.xnb</Output>
+      <Time>2013-10-14T21:20:34.8818233+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Moneda.wav</Source>
+      <Name>SeventhScreen\Moneda</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Moneda.xnb</Output>
+      <Time>2013-10-14T21:12:34.9798858+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

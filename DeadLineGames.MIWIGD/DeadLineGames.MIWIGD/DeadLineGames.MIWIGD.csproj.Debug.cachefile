@@ -32,7 +32,6 @@ Content\SixthScreen\Background.xnb
 Content\SixthScreen\Bug.xnb
 Content\SeventhScreen\Background.xnb
 Content\SeventhScreen\Cloud.xnb
-Content\SeventhScreen\CoinBlock.xnb
 Content\SeventhScreen\Mario.xnb
 Content\EightScreen\Background.xnb
 Content\EightScreen\House.xnb
@@ -62,7 +61,8 @@ Content\SeventhScreen\Sky.xnb
 Content\SeventhScreen\Jump.xnb
 Content\SeventhScreen\Theme.xnb
 Content\SeventhScreen\block.xnb
-Content\SeventhScreen\Flower.xnb
+Content\SeventhScreen\Coin.xnb
+Content\SeventhScreen\Moneda.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SecondScreen\0.map

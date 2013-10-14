@@ -92,7 +92,7 @@
     <Compile Include="Objects\SecondScreen\Weapon.cs" />
     <Compile Include="Objects\SeventhScreen\Block.cs" />
     <Compile Include="Objects\SeventhScreen\Blocks.cs" />
-    <Compile Include="Objects\SeventhScreen\CoinBox.cs" />
+    <Compile Include="Objects\SeventhScreen\Coin.cs" />
     <Compile Include="Objects\SeventhScreen\SeventhMap.cs" />
     <Compile Include="Objects\SeventhScreen\Mario.cs" />
     <Compile Include="Objects\SeventhScreen\Floor.cs" />

@@ -41,12 +41,14 @@ namespace DeadLineGames.MIWIGD.Screens
             mario = new Mario(new Vector2(DesignOptions.Bounds.MinX - BasicTextures.GetTexture("Mario").Width,
                 SeventhMap.Instance.boundsFloor - (BasicTextures.GetTexture("Mario").Height / 4)));
 
+            BasicTextures.CargarTextura("SeventhScreen/Coin", "Coin");
             BasicTextures.CargarTextura("SeventhScreen/block", "Block");
             bloques = new Blocks();
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<Song>("SeventhScreen/Theme"), "Mario");
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SeventhScreen/Jump"), "Jump");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SeventhScreen/Moneda"), "Coin");
             Player.Instance.RepeatMusic = true;
             Player.Instance.Play("Mario");
 
