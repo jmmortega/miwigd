@@ -570,6 +570,24 @@
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.wma</Extra>
       <Time>2013-10-13T20:30:14.039651+02:00</Time>
     </Item>
+    <Item>
+      <Source>SeventhScreen\block.png</Source>
+      <Name>SeventhScreen\block</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\block.xnb</Output>
+      <Time>2013-10-14T19:38:53.7470855+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Flower.png</Source>
+      <Name>SeventhScreen\Flower</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Flower.xnb</Output>
+      <Time>2013-10-13T21:54:00.1920098+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>

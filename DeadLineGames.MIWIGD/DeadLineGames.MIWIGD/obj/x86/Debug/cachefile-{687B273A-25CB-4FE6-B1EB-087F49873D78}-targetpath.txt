@@ -63,5 +63,7 @@ Content\SeventhScreen\Sky.xnb
 Content\SeventhScreen\Jump.xnb
 Content\SeventhScreen\Theme.xnb
 Content\SeventhScreen\Theme.wma
+Content\SeventhScreen\block.xnb
+Content\SeventhScreen\Flower.xnb
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map

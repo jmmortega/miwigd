@@ -74,3 +74,5 @@ C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Jump.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.xnb
 C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.wma
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\block.xnb
+C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Flower.xnb
