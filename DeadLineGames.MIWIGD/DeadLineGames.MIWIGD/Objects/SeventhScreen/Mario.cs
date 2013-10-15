@@ -18,10 +18,13 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
 
         private const int TOTALJUMPTIME = 30;
 
+        private float posYInit = 0;
         private int jumpTime = 0;
         private int jump = 0;
+        private int oldJump = 0;
         private bool isOnScreen = false;
-        private bool upper = false;
+        public bool upper = false;
+        public Dictionary<Direction, bool> lockDir;
 
         public Mario(Vector2 posicion)
             : base(BasicTextures.GetTexture("Mario"), 
@@ -30,6 +33,12 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             posicion)
         {
             this.Frames.ChangeRow(2);
+            this.posYInit = posicion.Y;
+
+            lockDir = new Dictionary<Direction, bool>();
+            lockDir.Add(Direction.Left, false);
+            lockDir.Add(Direction.Right, false);
+            lockDir.Add(Direction.Down, false);
         }
 
         public override void Update(TimeSpan elapsed)
@@ -57,20 +66,22 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             {
                 if(jumpTime == 0)
                     this.Frames.ChangeRow(2);
-                posX += 2;
+                if(!this.lockDir[Direction.Right])
+                    posX += 2;
             }
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft) ||
                 InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Left))
             {
                 if(jumpTime == 0)
                     this.Frames.ChangeRow(3);
-                posX -= 2;
+                if (!this.lockDir[Direction.Left])
+                    posX -= 2;
             }
 
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.A) ||
                 InputState.GetInputState().KeyboardState.IsKeyDown(Keys.A))
             {
-                if (jumpTime == 0)
+                if (!upper && jump == 0)
                     Player.Instance.Play("Jump");
 
                 if (jumpTime <= TOTALJUMPTIME)
@@ -89,9 +100,34 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             }
 
             if (!upper)
-                posY = jumping();
+            {
+                if (jumpTime == 0 && oldJump != 0)
+                {
+                    this.Frames.Pause = true;
+                    upper = true;
+                }
+                else
+                    posY = jumping();
+            }
             else
-                posY = falling();
+            {
+                if (!this.lockDir[Direction.Down])
+                {
+                    if (jump == 0 && oldJump != 0)
+                    {
+                        jump = oldJump;
+                    }
+                    posY = falling();
+                }
+                else
+                {
+                    upper = false;
+                    if(oldJump == 0)
+                        oldJump = jump;
+                    jump = 0;
+                    jumpTime = 0;
+                }
+            }
 
             if (posX == this.Posicion.X && jumpTime == 0)
             {
@@ -109,8 +145,10 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             }
             else
             {
-                if (jumpTime == 0) 
+                if (jumpTime == 0 && jump == 0)
                     this.Frames.Pause = false;
+                else
+                    this.Frames.Pause = true;
             }
 
             this.SetPosicion(posX, posY);
@@ -123,7 +161,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             {
                 if (jump++ <= jumpTime)
                 {
-                    posY = this.Posicion.Y - (6 - ((jump * 10) / 100));
+                    posY = this.Posicion.Y - (5 - ((jump * 10) / 100));
                 }
                 else
                 {
@@ -138,18 +176,18 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         private float falling()
         {
             float posY = this.Posicion.Y;
-
-            if (--jump > 0)
+            if (posY <= posYInit)
             {
-                posY = this.Posicion.Y + (6 - ((jump * 10) / 100));
+                posY = this.Posicion.Y + (5 - ((--jump * 20) / 100));
             }
             else
             {
+                posY = posYInit;
                 jump = 0;
+                oldJump = 0;
                 jumpTime = 0;
                 upper = false;
             }
-
             return posY;
         }
 

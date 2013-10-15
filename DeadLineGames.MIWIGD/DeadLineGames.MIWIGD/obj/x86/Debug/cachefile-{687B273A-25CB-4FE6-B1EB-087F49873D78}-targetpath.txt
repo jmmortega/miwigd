@@ -32,7 +32,6 @@ Content\SixthScreen\Background.xnb
 Content\SixthScreen\Bug.xnb
 Content\SeventhScreen\Background.xnb
 Content\SeventhScreen\Cloud.xnb
-Content\SeventhScreen\CoinBlock.xnb
 Content\SeventhScreen\Mario.xnb
 Content\EightScreen\Background.xnb
 Content\EightScreen\House.xnb
@@ -59,9 +58,15 @@ Content\MenuScreen\TitleTheme.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.xnb
 Content\SeventhScreen\Theme.wma
+<<<<<<< HEAD
 Content\SecondScreen\ItemObtained.xnb
 Content\SecondScreen\ItemReceived.xnb
 Content\SecondScreen\Typing.xnb
 Content\SeventhScreen\Jump.xnb
+=======
+Content\SeventhScreen\block.xnb
+Content\SeventhScreen\Coin.xnb
+Content\SeventhScreen\Moneda.xnb
+>>>>>>> ac1d83fd501b97bac2cc18f00e962ee578b3bd87
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map

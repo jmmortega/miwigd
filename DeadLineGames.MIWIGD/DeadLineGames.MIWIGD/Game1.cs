@@ -59,7 +59,7 @@ namespace DeadLineGames.MIWIGD
 
             base.Initialize();
 
-            ScreenManager.TransitionTo("Menu");
+            ScreenManager.TransitionTo("Seventh");
         }
 
         /// <summary>
