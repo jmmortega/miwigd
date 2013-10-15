@@ -39,9 +39,7 @@ namespace DeadLineGames.MIWIGD
             DesignOptions.Bounds = new Bounds(50, 620, 35, 435, 50, 620, 35, 435);
 
             BasicTextures.GraphicsManager = graphics;
-            BasicTextures.ContentManager = Content;
-
-            graphics.IsFullScreen = true;
+            BasicTextures.ContentManager = Content;            
         }
 
         /// <summary>

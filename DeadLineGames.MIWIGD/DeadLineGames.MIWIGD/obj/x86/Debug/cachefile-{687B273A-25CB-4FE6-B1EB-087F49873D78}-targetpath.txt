@@ -50,22 +50,18 @@ Content\SecondScreen\Fire.xnb
 Content\SecondScreen\LinkSword.xnb
 Content\SecondScreen\Arcade30.xnb
 Content\SecondScreen\LinkObject.xnb
-Content\MenuScreen\TitleTheme.xnb
-Content\MenuScreen\TitleTheme.wma
-Content\SecondScreen\ItemObtained.xnb
-Content\SecondScreen\ItemReceived.xnb
-Content\SecondScreen\Typing.xnb
-<<<<<<< HEAD
-=======
-Content\SecondScreen\LinkObject.xnb
 Content\SeventhScreen\F1.xnb
 Content\SeventhScreen\F2.xnb
 Content\SeventhScreen\F3.xnb
 Content\SeventhScreen\F4.xnb
 Content\SeventhScreen\Sky.xnb
-Content\SeventhScreen\Jump.xnb
+Content\MenuScreen\TitleTheme.xnb
+Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.xnb
 Content\SeventhScreen\Theme.wma
->>>>>>> ae9f4dbca83bb9f1e9d5c0254dd8a81d981c196a
+Content\SecondScreen\ItemObtained.xnb
+Content\SecondScreen\ItemReceived.xnb
+Content\SecondScreen\Typing.xnb
+Content\SeventhScreen\Jump.xnb
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
