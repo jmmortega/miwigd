@@ -63,6 +63,12 @@ Content\SeventhScreen\Theme.xnb
 Content\SeventhScreen\block.xnb
 Content\SeventhScreen\Coin.xnb
 Content\SeventhScreen\Moneda.xnb
+Content\SixthScreen\Pumba\idle.xnb
+Content\SixthScreen\Pumba\run.xnb
+Content\SixthScreen\Pumba\startrun.xnb
+Content\SixthScreen\Pumba\eating.xnb
+Content\SixthScreen\Pumba\turn.xnb
+Content\SixthScreen\Pumba\burp.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SecondScreen\0.map
