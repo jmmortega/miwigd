@@ -41,11 +41,14 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
                     Block bloque = (Block)b;
                     if (mario.HaveColision(b))
                     {
-                        if (mario.Posicion.Y >= (b.Posicion.Y + b.Height - 5))
+                        if (mario.Posicion.Y >= (b.Posicion.Y + b.Height - 5)
+                            || mario.Posicion.Y >= (b.Posicion.Y + b.Height - 15))
                         {
                             if (!mario.lockDir[Direction.Left]
                                 && !mario.lockDir[Direction.Right])
                             {
+                                if (mario.Posicion.Y >= (b.Posicion.Y + b.Height - 15))
+                                    mario.SetPosicion(mario.Posicion.X, b.Posicion.Y + b.Height);
                                 mario.upper = true;
                                 if (bloque.actualFrame == 0)
                                 {
@@ -76,11 +79,14 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
                             mario.lockDir[Direction.Right] = true;
                             mario.lockDir[Direction.Down] = false;
                         }
-                        else if (mario.Posicion.X >= (b.Posicion.X + b.Width - 5))
+                        else if (mario.Posicion.X >= (b.Posicion.X + b.Width - 5)
+                            || mario.Posicion.X >= (b.Posicion.X + b.Width - 15))
                         {
                             mario.lockDir[Direction.Left] = true;
                             mario.lockDir[Direction.Right] = false;
                             mario.lockDir[Direction.Down] = false;
+                            if(mario.Posicion.X >= (b.Posicion.X + b.Width - 15))
+                                mario.SetPosicion(b.Posicion.X + b.Width, mario.Posicion.Y);
                         }
                         break;
                     }
