@@ -595,7 +595,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\idle.xnb</Output>
-      <Time>2013-10-15T21:41:06.1898529+02:00</Time>
+      <Time>2013-10-17T01:14:52.3133269+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Pumba\run.png</Source>
@@ -604,7 +604,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\run.xnb</Output>
-      <Time>2013-10-16T12:02:48.3187911+02:00</Time>
+      <Time>2013-10-17T01:32:57.236302+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Pumba\startrun.png</Source>
@@ -613,7 +613,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\startrun.xnb</Output>
-      <Time>2013-10-16T12:03:04.4805146+02:00</Time>
+      <Time>2013-10-17T01:39:36.8232865+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Pumba\eating.png</Source>
@@ -622,7 +622,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\eating.xnb</Output>
-      <Time>2013-10-16T12:03:43.3404635+02:00</Time>
+      <Time>2013-10-17T01:23:41.5562474+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Pumba\turn.png</Source>
@@ -631,7 +631,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\turn.xnb</Output>
-      <Time>2013-10-16T12:04:20.4689134+02:00</Time>
+      <Time>2013-10-17T01:42:08.6220224+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Pumba\burp.png</Source>
@@ -640,7 +640,43 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\burp.xnb</Output>
-      <Time>2013-10-16T12:04:33.9005492+02:00</Time>
+      <Time>2013-10-17T01:48:53.9804574+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Timon\idle.png</Source>
+      <Name>SixthScreen\Timon\idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Timon\idle.xnb</Output>
+      <Time>2013-10-17T00:35:38.7819001+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Bugs\Bugs.png</Source>
+      <Name>SixthScreen\Bugs\Bugs</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Bugs\Bugs.xnb</Output>
+      <Time>2013-10-16T22:20:29.9476507+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Timon\run.png</Source>
+      <Name>SixthScreen\Timon\run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Timon\run.xnb</Output>
+      <Time>2013-10-17T00:44:09.0532769+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Timon\turn.png</Source>
+      <Name>SixthScreen\Timon\turn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Timon\turn.xnb</Output>
+      <Time>2013-10-17T00:44:09.0592772+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

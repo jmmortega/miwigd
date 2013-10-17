@@ -97,8 +97,10 @@
     <Compile Include="Objects\SeventhScreen\Mario.cs" />
     <Compile Include="Objects\SeventhScreen\Floor.cs" />
     <Compile Include="Objects\SixthScreen\Bug.cs" />
+    <Compile Include="Objects\SixthScreen\Bugs.cs" />
     <Compile Include="Objects\SixthScreen\Cross.cs" />
     <Compile Include="Objects\SixthScreen\Pumba.cs" />
+    <Compile Include="Objects\SixthScreen\Timon.cs" />
     <Compile Include="Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

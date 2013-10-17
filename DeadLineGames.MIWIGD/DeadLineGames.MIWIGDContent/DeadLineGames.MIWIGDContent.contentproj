@@ -424,22 +424,48 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\idle.png">
+    <Compile Include="SixthScreen\Pumba\startrun.png">
+      <Name>startrun</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\burp.png">
+      <Name>burp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Timon\idle.png">
       <Name>idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\run.png">
-      <Name>run</Name>
+    <Compile Include="SixthScreen\Bugs\Bugs.png">
+      <Name>Bugs</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\startrun.png">
-      <Name>startrun</Name>
+    <Compile Include="SixthScreen\Timon\run.png">
+      <Name>run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="SixthScreen\Timon\turn.png">
+      <Name>turn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\idle.png">
+      <Name>idle</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -452,15 +478,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\turn.png">
-      <Name>turn</Name>
+    <Compile Include="SixthScreen\Pumba\run.png">
+      <Name>run</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\burp.png">
-      <Name>burp</Name>
+    <Compile Include="SixthScreen\Pumba\turn.png">
+      <Name>turn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

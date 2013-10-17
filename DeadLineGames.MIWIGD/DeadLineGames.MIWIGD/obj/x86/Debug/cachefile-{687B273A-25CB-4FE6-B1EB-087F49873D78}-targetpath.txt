@@ -71,5 +71,9 @@ Content\SixthScreen\Pumba\startrun.xnb
 Content\SixthScreen\Pumba\eating.xnb
 Content\SixthScreen\Pumba\turn.xnb
 Content\SixthScreen\Pumba\burp.xnb
+Content\SixthScreen\Timon\idle.xnb
+Content\SixthScreen\Bugs\Bugs.xnb
+Content\SixthScreen\Timon\run.xnb
+Content\SixthScreen\Timon\turn.xnb
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
