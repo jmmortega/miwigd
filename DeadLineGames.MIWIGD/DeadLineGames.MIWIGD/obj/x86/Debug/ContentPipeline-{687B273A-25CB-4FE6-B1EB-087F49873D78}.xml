@@ -308,18 +308,6 @@
       <Time>2013-10-04T17:47:03.0953247+02:00</Time>
     </Item>
     <Item>
-<<<<<<< HEAD
-      <Source>SeventhScreen\CoinBlock.png</Source>
-      <Name>SeventhScreen\CoinBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\CoinBlock.xnb</Output>
-      <Time>2013-10-04T17:47:03.0953247+02:00</Time>
-    </Item>
-    <Item>
-=======
->>>>>>> ac1d83fd501b97bac2cc18f00e962ee578b3bd87
       <Source>SeventhScreen\Mario.png</Source>
       <Name>SeventhScreen\Mario</Name>
       <Importer>TextureImporter</Importer>
@@ -518,6 +506,24 @@
       <Time>2013-10-14T01:11:00.5024848+02:00</Time>
     </Item>
     <Item>
+      <Source>SeventhScreen\block.png</Source>
+      <Name>SeventhScreen\block</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\block.xnb</Output>
+      <Time>2013-10-15T03:43:32.8049596+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Coin.png</Source>
+      <Name>SeventhScreen\Coin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Coin.xnb</Output>
+      <Time>2013-10-15T03:43:32.7909555+02:00</Time>
+    </Item>
+    <Item>
       <Source>MenuScreen\TitleTheme.mp3</Source>
       <Name>MenuScreen\TitleTheme</Name>
       <Importer>Mp3Importer</Importer>
@@ -574,31 +580,13 @@
       <Time>2013-10-14T01:11:00.4994817+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\block.png</Source>
-      <Name>SeventhScreen\block</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\block.xnb</Output>
-      <Time>2013-10-14T19:38:53.7470855+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SeventhScreen\Coin.png</Source>
-      <Name>SeventhScreen\Coin</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Coin.xnb</Output>
-      <Time>2013-10-14T21:20:34.8818233+02:00</Time>
-    </Item>
-    <Item>
       <Source>SeventhScreen\Moneda.wav</Source>
       <Name>SeventhScreen\Moneda</Name>
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Moneda.xnb</Output>
-      <Time>2013-10-14T21:12:34.9798858+02:00</Time>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Moneda.xnb</Output>
+      <Time>2013-10-15T03:43:32.8019598+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

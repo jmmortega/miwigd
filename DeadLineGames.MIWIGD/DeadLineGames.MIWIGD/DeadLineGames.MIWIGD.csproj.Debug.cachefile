@@ -54,18 +54,15 @@ Content\SeventhScreen\F2.xnb
 Content\SeventhScreen\F3.xnb
 Content\SeventhScreen\F4.xnb
 Content\SeventhScreen\Sky.xnb
+Content\SeventhScreen\block.xnb
+Content\SeventhScreen\Coin.xnb
 Content\MenuScreen\TitleTheme.xnb
 Content\SeventhScreen\Theme.xnb
-<<<<<<< HEAD
 Content\SecondScreen\ItemObtained.xnb
 Content\SecondScreen\ItemReceived.xnb
 Content\SecondScreen\Typing.xnb
 Content\SeventhScreen\Jump.xnb
-=======
-Content\SeventhScreen\block.xnb
-Content\SeventhScreen\Coin.xnb
 Content\SeventhScreen\Moneda.xnb
->>>>>>> ac1d83fd501b97bac2cc18f00e962ee578b3bd87
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SecondScreen\0.map
