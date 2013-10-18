@@ -75,5 +75,7 @@ Content\SixthScreen\Timon\idle.xnb
 Content\SixthScreen\Bugs\Bugs.xnb
 Content\SixthScreen\Timon\run.xnb
 Content\SixthScreen\Timon\turn.xnb
+Content\SixthScreen\Theme.xnb
+Content\SixthScreen\Theme.wma
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map

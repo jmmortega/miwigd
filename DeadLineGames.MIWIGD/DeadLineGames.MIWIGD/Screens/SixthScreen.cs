@@ -8,6 +8,9 @@ using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
 using Microsoft.Xna.Framework.Graphics;
 using DeadLineGames.MIWIGD.Objects.SixthScreen;
+using NamoCode.Game.Class.Media;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -25,7 +28,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private bool EndScreen;
 
-        private int Score;
+        public static int Score;
 
         public SixthScreen(Game game)
             : base(game)
@@ -47,6 +50,13 @@ namespace DeadLineGames.MIWIGD.Screens
 
             Score = 0;
             EndScreen = false;
+
+            Player.Instance.Sounds.Clear();
+            Player.Instance.Sounds.Add(base.Content.Load<Song>("SixthScreen/Theme"), "Bugs");
+            //Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Eat"), "Eat");
+            //Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Burp"), "Burp");
+            Player.Instance.RepeatMusic = true;
+            Player.Instance.Play("Bugs");
 
             base.Initialize();
         }
@@ -76,8 +86,11 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             if (!EndScreen)
             {
-                timon.Update(elapsed);
                 pumba.Update(elapsed);
+                if (!pumba.isBurping)
+                {
+                    timon.Update(elapsed);
+                }
                 Bugs.Instance.updateBugs(elapsed);
                 checkCollisions();
             }
@@ -95,24 +108,25 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private void checkCollisions()
         {
-
             foreach (Bug b in Bugs.Instance)
             {
                 if (pumba.HaveColision(b))
                 {
-                    if(pumba.estado == Objects.CharsState.Idle)
-                        pumba.isEating = true;
+                    
                     if (b.Posicion.Y >= pumba.Posicion.Y - 5
-                        && b.Posicion.Y <= pumba.Posicion.Y + 5)
+                        && b.Posicion.Y <= pumba.Center.Y + 5)
                     {
                         b.isEating = true;
                         Score++;
+                        if (Score == 10)
+                            pumba.isBurping = true;
+                        else if (pumba.estado == Objects.CharsState.Idle)
+                            pumba.isEating = true;
                         if (b.actuaFrame == b.framesCount - 1)
                             EndScreen = true;
                     }
                 }
             }
-
         }
 
     }

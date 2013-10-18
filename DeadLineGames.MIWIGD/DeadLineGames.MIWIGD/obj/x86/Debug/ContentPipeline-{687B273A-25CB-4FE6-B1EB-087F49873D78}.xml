@@ -640,7 +640,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\burp.xnb</Output>
-      <Time>2013-10-17T01:48:53.9804574+02:00</Time>
+      <Time>2013-10-17T19:11:55.9502692+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Timon\idle.png</Source>
@@ -677,6 +677,16 @@
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Timon\turn.xnb</Output>
       <Time>2013-10-17T00:44:09.0592772+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Theme.mp3</Source>
+      <Name>SixthScreen\Theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Theme.xnb</Output>
+      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Theme.wma</Extra>
+      <Time>2013-10-17T18:25:02.810174+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
