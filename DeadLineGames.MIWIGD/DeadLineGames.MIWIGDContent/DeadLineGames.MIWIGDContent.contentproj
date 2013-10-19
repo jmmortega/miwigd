@@ -431,8 +431,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\burp.png">
-      <Name>burp</Name>
+    <Compile Include="SixthScreen\Pumba\burping.png">
+      <Name>burping</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -496,6 +496,20 @@
       <Name>Theme</Name>
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\burp.wav">
+      <Name>burp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\gulp.wav">
+      <Name>gulp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

@@ -38,7 +38,7 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
             frames.Add(CharsState.StartRun, new FrameRateInfo(3, 0.25f, 1, false));
             frames.Add(CharsState.Run, new FrameRateInfo(10, 0.15f, 1, false));
             frames.Add(CharsState.Turn, new FrameRateInfo(3, 0.25f, 1, false));
-            frames.Add(CharsState.Burp, new FrameRateInfo(11, 0.20f, 1, false));
+            frames.Add(CharsState.Burp, new FrameRateInfo(11, 0.07f, 1, false));
 
             cambiarFrame();
 
@@ -62,6 +62,8 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
                     cambiarEstado(MOVIMIENTO);
                 }
             }
+            else
+                estado = CharsState.Burp;
 
             if ((InputState.GetInputState().GamepadOne.IsButtonUp(Buttons.LeftThumbstickLeft)
                 && InputState.GetInputState().KeyboardState.IsKeyUp(Keys.Left))
@@ -129,7 +131,7 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
                     }
                     break;
 
-                case CharsState.Run:
+                case CharsState.Run: 
                     X = this.Posicion.X + Movimiento;
                     break;
 

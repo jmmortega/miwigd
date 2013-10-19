@@ -452,43 +452,6 @@
       <Time>2013-10-10T14:02:22.4404391+02:00</Time>
     </Item>
     <Item>
-      <Source>MenuScreen\TitleTheme.mp3</Source>
-      <Name>MenuScreen\TitleTheme</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb</Output>
-      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma</Extra>
-      <Time>2013-10-08T21:20:05.6337868+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SecondScreen\ItemObtained.wav</Source>
-      <Name>SecondScreen\ItemObtained</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb</Output>
-      <Time>2013-10-10T14:15:34.6538896+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SecondScreen\ItemReceived.wav</Source>
-      <Name>SecondScreen\ItemReceived</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb</Output>
-      <Time>2013-10-10T14:15:33.5653806+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SecondScreen\Typing.wav</Source>
-      <Name>SecondScreen\Typing</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb</Output>
-      <Time>2013-10-10T14:27:28.8606705+02:00</Time>
-    </Item>
-    <Item>
       <Source>SecondScreen\LinkObject.png</Source>
       <Name>SecondScreen\LinkObject</Name>
       <Importer>TextureImporter</Importer>
@@ -543,25 +506,6 @@
       <Time>2013-10-13T19:53:12.3474487+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\Jump.wav</Source>
-      <Name>SeventhScreen\Jump</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Jump.xnb</Output>
-      <Time>2013-10-13T20:06:01.933778+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SeventhScreen\Theme.mp3</Source>
-      <Name>SeventhScreen\Theme</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.xnb</Output>
-      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.wma</Extra>
-      <Time>2013-10-13T20:30:14.039651+02:00</Time>
-    </Item>
-    <Item>
       <Source>SeventhScreen\block.png</Source>
       <Name>SeventhScreen\block</Name>
       <Importer>TextureImporter</Importer>
@@ -580,33 +524,6 @@
       <Time>2013-10-14T21:20:34.8818233+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\Moneda.wav</Source>
-      <Name>SeventhScreen\Moneda</Name>
-      <Importer>WavImporter</Importer>
-      <Processor>SoundEffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Moneda.xnb</Output>
-      <Time>2013-10-14T21:12:34.9798858+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SixthScreen\Pumba\idle.png</Source>
-      <Name>SixthScreen\Pumba\idle</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\idle.xnb</Output>
-      <Time>2013-10-17T01:14:52.3133269+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SixthScreen\Pumba\run.png</Source>
-      <Name>SixthScreen\Pumba\run</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\run.xnb</Output>
-      <Time>2013-10-17T01:32:57.236302+02:00</Time>
-    </Item>
-    <Item>
       <Source>SixthScreen\Pumba\startrun.png</Source>
       <Name>SixthScreen\Pumba\startrun</Name>
       <Importer>TextureImporter</Importer>
@@ -614,33 +531,6 @@
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\startrun.xnb</Output>
       <Time>2013-10-17T01:39:36.8232865+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SixthScreen\Pumba\eating.png</Source>
-      <Name>SixthScreen\Pumba\eating</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\eating.xnb</Output>
-      <Time>2013-10-17T01:23:41.5562474+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SixthScreen\Pumba\turn.png</Source>
-      <Name>SixthScreen\Pumba\turn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\turn.xnb</Output>
-      <Time>2013-10-17T01:42:08.6220224+02:00</Time>
-    </Item>
-    <Item>
-      <Source>SixthScreen\Pumba\burp.png</Source>
-      <Name>SixthScreen\Pumba\burp</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\burp.xnb</Output>
-      <Time>2013-10-17T19:11:55.9502692+02:00</Time>
     </Item>
     <Item>
       <Source>SixthScreen\Timon\idle.png</Source>
@@ -679,6 +569,62 @@
       <Time>2013-10-17T00:44:09.0592772+02:00</Time>
     </Item>
     <Item>
+      <Source>SixthScreen\Pumba\idle.png</Source>
+      <Name>SixthScreen\Pumba\idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\idle.xnb</Output>
+      <Time>2013-10-17T01:14:52.3133269+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\eating.png</Source>
+      <Name>SixthScreen\Pumba\eating</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\eating.xnb</Output>
+      <Time>2013-10-17T01:23:41.5562474+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\run.png</Source>
+      <Name>SixthScreen\Pumba\run</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\run.xnb</Output>
+      <Time>2013-10-17T01:32:57.236302+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\turn.png</Source>
+      <Name>SixthScreen\Pumba\turn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\turn.xnb</Output>
+      <Time>2013-10-17T01:42:08.6220224+02:00</Time>
+    </Item>
+    <Item>
+      <Source>MenuScreen\TitleTheme.mp3</Source>
+      <Name>MenuScreen\TitleTheme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.xnb</Output>
+      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\MenuScreen\TitleTheme.wma</Extra>
+      <Time>2013-10-08T21:20:05.6337868+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Theme.mp3</Source>
+      <Name>SeventhScreen\Theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.xnb</Output>
+      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Theme.wma</Extra>
+      <Time>2013-10-13T20:30:14.039651+02:00</Time>
+    </Item>
+    <Item>
       <Source>SixthScreen\Theme.mp3</Source>
       <Name>SixthScreen\Theme</Name>
       <Importer>Mp3Importer</Importer>
@@ -687,6 +633,78 @@
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Theme.xnb</Output>
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Theme.wma</Extra>
       <Time>2013-10-17T18:25:02.810174+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\ItemObtained.wav</Source>
+      <Name>SecondScreen\ItemObtained</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemObtained.xnb</Output>
+      <Time>2013-10-10T14:15:34.6538896+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\ItemReceived.wav</Source>
+      <Name>SecondScreen\ItemReceived</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\ItemReceived.xnb</Output>
+      <Time>2013-10-10T14:15:33.5653806+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SecondScreen\Typing.wav</Source>
+      <Name>SecondScreen\Typing</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SecondScreen\Typing.xnb</Output>
+      <Time>2013-10-10T14:27:28.8606705+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Jump.wav</Source>
+      <Name>SeventhScreen\Jump</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Jump.xnb</Output>
+      <Time>2013-10-13T20:06:01.933778+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SeventhScreen\Moneda.wav</Source>
+      <Name>SeventhScreen\Moneda</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Moneda.xnb</Output>
+      <Time>2013-10-14T21:12:34.9798858+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\burping.png</Source>
+      <Name>SixthScreen\Pumba\burping</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\burping.xnb</Output>
+      <Time>2013-10-17T19:11:55.9502692+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\burp.wav</Source>
+      <Name>SixthScreen\Pumba\burp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\burp.xnb</Output>
+      <Time>2013-10-19T13:38:25.5236343+02:00</Time>
+    </Item>
+    <Item>
+      <Source>SixthScreen\Pumba\gulp.wav</Source>
+      <Name>SixthScreen\Pumba\gulp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\gulp.xnb</Output>
+      <Time>2013-10-19T16:41:32.0783117+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -726,8 +744,8 @@
         <Value>2011-09-01T16:22:30+02:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-08-09T16:07:46.8837839+02:00</Value>
+        <Key>C:\WINDOWS\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2013-10-18T19:01:02.1367087+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

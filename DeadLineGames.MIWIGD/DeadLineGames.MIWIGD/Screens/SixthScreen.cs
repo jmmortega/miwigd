@@ -53,8 +53,8 @@ namespace DeadLineGames.MIWIGD.Screens
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<Song>("SixthScreen/Theme"), "Bugs");
-            //Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Eat"), "Eat");
-            //Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Burp"), "Burp");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/gulp"), "Gulp");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/burp"), "Burp");
             Player.Instance.RepeatMusic = true;
             Player.Instance.Play("Bugs");
 
@@ -77,7 +77,7 @@ namespace DeadLineGames.MIWIGD.Screens
             BasicTextures.CargarTextura("SixthScreen/Pumba/startrun", "startrun");
             BasicTextures.CargarTextura("SixthScreen/Pumba/run", "run");
             BasicTextures.CargarTextura("SixthScreen/Pumba/turn", "turn");
-            BasicTextures.CargarTextura("SixthScreen/Pumba/burp", "burp");
+            BasicTextures.CargarTextura("SixthScreen/Pumba/burping", "burp");
             pumba = new Pumba(new Vector2(285 - (BasicTextures.GetTexture("idle").Width / 4),
                 DesignOptions.Bounds.MaxY - 80));
         }
@@ -112,16 +112,23 @@ namespace DeadLineGames.MIWIGD.Screens
             {
                 if (pumba.HaveColision(b))
                 {
-                    
                     if (b.Posicion.Y >= pumba.Posicion.Y - 5
                         && b.Posicion.Y <= pumba.Center.Y + 5)
                     {
                         b.isEating = true;
                         Score++;
                         if (Score == 10)
+                        {
                             pumba.isBurping = true;
-                        else if (pumba.estado == Objects.CharsState.Idle)
-                            pumba.isEating = true;
+                            Player.Instance.Play("Burp");
+                        }
+                        else
+                        {
+                            if (pumba.estado == Objects.CharsState.Idle)
+                                pumba.isEating = true;
+                            Player.Instance.Play("Gulp");
+                        }
+                                
                         if (b.actuaFrame == b.framesCount - 1)
                             EndScreen = true;
                     }
