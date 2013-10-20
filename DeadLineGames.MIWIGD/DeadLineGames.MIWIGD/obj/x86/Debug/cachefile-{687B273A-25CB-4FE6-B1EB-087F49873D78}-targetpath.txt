@@ -81,5 +81,6 @@ Content\TenthScreen\MarketingTimeFont.xnb
 Content\TenthScreen\back.xnb
 Content\TenthScreen\theme.xnb
 Content\TenthScreen\theme.wma
+Content\TenthScreen\MTitle.xnb
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map

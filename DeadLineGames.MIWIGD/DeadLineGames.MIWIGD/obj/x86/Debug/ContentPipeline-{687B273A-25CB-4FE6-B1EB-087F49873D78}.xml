@@ -716,6 +716,15 @@
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\theme.wma</Extra>
       <Time>2013-10-20T03:45:53.6698661+02:00</Time>
     </Item>
+    <Item>
+      <Source>TenthScreen\MTitle.png</Source>
+      <Name>TenthScreen\MTitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\MTitle.xnb</Output>
+      <Time>2013-10-20T17:22:13.6926672+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>

@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Media;
 using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
 using Microsoft.Xna.Framework.Graphics;
+using DeadLineGames.MIWIGD.Objects.TenthScreen;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -21,6 +22,7 @@ namespace DeadLineGames.MIWIGD.Screens
     {
 
         private AnimatedElement back;
+        private Title title;
 
         public TenthScreen(Game game)
             : base(game)
@@ -34,9 +36,14 @@ namespace DeadLineGames.MIWIGD.Screens
                 new Vector2(DesignOptions.Bounds.MinX, DesignOptions.Bounds.MinY),
                 new FrameRateInfo(1, 0.30f, 5, true));
 
+            BasicTextures.CargarTextura("TenthScreen/MTitle", "MTitle");
+            float CenterX = (285 - (BasicTextures.GetTexture("MTitle").Width / 2)) + DesignOptions.Bounds.MinX;
+            float CenterY = (200 - (BasicTextures.GetTexture("MTitle").Height / 2)) + DesignOptions.Bounds.MinY;;
+            title = new Title(new Vector2(CenterX, CenterY));
+
             Player.Instance.Sounds.Clear();
-            Player.Instance.Sounds.Add(base.Content.Load<Song>("TenthScreen/theme"), "Will");
-            Player.Instance.Play("Will");
+            Player.Instance.Sounds.Add(base.Content.Load<Song>("TenthScreen/theme"), "HilariousDance");
+            Player.Instance.Play("HilariousDance", 0.70f);
             Player.Instance.RepeatMusic = true;
 
             base.Initialize();
@@ -51,12 +58,14 @@ namespace DeadLineGames.MIWIGD.Screens
         public override void Update(TimeSpan elapsed)
         {
             back.Update(elapsed);
+            title.Update(elapsed);
             base.Update(elapsed);
         }
 
         public override void Draw()
         {
             back.Draw(base.SpriteBatch);
+            title.Draw(base.SpriteBatch);
             base.Draw();
         }
     }
