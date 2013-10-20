@@ -101,7 +101,9 @@
     <Compile Include="Objects\SixthScreen\Cross.cs" />
     <Compile Include="Objects\SixthScreen\Pumba.cs" />
     <Compile Include="Objects\SixthScreen\Timon.cs" />
+    <Compile Include="Objects\TenthScreen\Dancers.cs" />
     <Compile Include="Objects\TenthScreen\Title.cs" />
+    <Compile Include="Screens\TenthScreenBis.cs" />
     <Compile Include="Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

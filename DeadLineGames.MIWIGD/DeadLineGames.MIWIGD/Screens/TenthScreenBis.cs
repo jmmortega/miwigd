@@ -18,13 +18,13 @@ namespace DeadLineGames.MIWIGD.Screens
     /// 
     /// Only animation of Jake and Finn. Search font to adventure time to create a Marketing Time.
     /// </summary>
-    public class TenthScreen : Screen
+    public class TenthScreenBis : Screen
     {
 
-        private AnimatedElement back;
+        private Dancers dancers;
         private Title title;
 
-        public TenthScreen(Game game)
+        public TenthScreenBis(Game game)
             : base(game)
         { }
 
@@ -32,19 +32,18 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             BasicTextures.FreeMemory();
 
-            back = new AnimatedElement(base.Content.Load<Texture2D>("TenthScreen/dancing"),
-                "Background",
-                new Vector2(DesignOptions.Bounds.MinX, DesignOptions.Bounds.MinY),
-                new FrameRateInfo(8, 0.30f, 8, true));
+            BasicTextures.CargarTextura("TenthScreen/dancing", "dancers");
+            dancers = new Dancers(new Vector2(DesignOptions.Bounds.MinX,
+                    DesignOptions.Bounds.MinY + 200 - (BasicTextures.GetTexture("dancers").Height / 16)));
 
             BasicTextures.CargarTextura("TenthScreen/MTitle", "MTitle");
-            float CenterX = (285 - (BasicTextures.GetTexture("MTitle").Width / 2)) + DesignOptions.Bounds.MinX;
-            float CenterY = (200 - (BasicTextures.GetTexture("MTitle").Height / 2)) + DesignOptions.Bounds.MinY;
+            float CenterX = DesignOptions.Bounds.MaxX - BasicTextures.GetTexture("MTitle").Width - 10;
+            float CenterY = DesignOptions.Bounds.MinY + 10;
             title = new Title(new Vector2(CenterX, CenterY));
 
             Player.Instance.Sounds.Clear();
-            Player.Instance.Sounds.Add(base.Content.Load<Song>("TenthScreen/theme"), "HilariousDance");
-            Player.Instance.Play("HilariousDance", 0.70f);
+            Player.Instance.Sounds.Add(base.Content.Load<Song>("TenthScreen/theme2"), "GangnamStyle");
+            Player.Instance.Play("GangnamStyle", 0.70f);
             Player.Instance.RepeatMusic = true;
 
             base.Initialize();
@@ -58,7 +57,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Update(TimeSpan elapsed)
         {
-            back.Update(elapsed);
+            dancers.Update(elapsed);
             title.Update(elapsed);
             base.Update(elapsed);
         }
@@ -66,7 +65,7 @@ namespace DeadLineGames.MIWIGD.Screens
         public override void Draw()
         {
             base.SpriteBatch.GraphicsDevice.Clear(Color.White);
-            back.Draw(base.SpriteBatch);
+            dancers.Draw(base.SpriteBatch);
             title.Draw(base.SpriteBatch);
             base.Draw();
         }
