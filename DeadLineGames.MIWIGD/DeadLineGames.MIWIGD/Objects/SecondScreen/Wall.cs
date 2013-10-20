@@ -14,6 +14,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
         public Wall(Vector2 posicion)
             : base(BasicTextures.GetTexture("wall"),
             "wall",
+            new FrameRateInfo(),
             posicion)
         { }
 

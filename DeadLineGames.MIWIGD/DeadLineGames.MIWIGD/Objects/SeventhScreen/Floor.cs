@@ -15,6 +15,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         public Floor(Texture2D textura, Vector2 posicion)
             : base(textura,
             "floor",
+            new FrameRateInfo(),
             posicion)
         { }
 

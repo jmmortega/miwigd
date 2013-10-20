@@ -299,15 +299,6 @@
       <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
-      <Source>SeventhScreen\Cloud.png</Source>
-      <Name>SeventhScreen\Cloud</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\Cloud.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
       <Source>SeventhScreen\Mario.png</Source>
       <Name>SeventhScreen\Mario</Name>
       <Importer>TextureImporter</Importer>
@@ -350,42 +341,6 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\PaperBoy.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>TenScreen\Background.png</Source>
-      <Name>TenScreen\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Background.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>TenScreen\Finn.png</Source>
-      <Name>TenScreen\Finn</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Finn.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>TenScreen\Jake.png</Source>
-      <Name>TenScreen\Jake</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\Jake.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>TenScreen\MarketingTimeFont.png</Source>
-      <Name>TenScreen\MarketingTimeFont</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenScreen\MarketingTimeFont.xnb</Output>
       <Time>2013-10-04T17:09:02+02:00</Time>
     </Item>
     <Item>
@@ -705,6 +660,61 @@
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SixthScreen\Pumba\gulp.xnb</Output>
       <Time>2013-10-19T16:41:32.0783117+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\Background.png</Source>
+      <Name>TenthScreen\Background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\Background.xnb</Output>
+      <Time>2013-10-04T17:09:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\Finn.png</Source>
+      <Name>TenthScreen\Finn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\Finn.xnb</Output>
+      <Time>2013-10-04T17:09:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\Jake.png</Source>
+      <Name>TenthScreen\Jake</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\Jake.xnb</Output>
+      <Time>2013-10-04T17:09:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\MarketingTimeFont.png</Source>
+      <Name>TenthScreen\MarketingTimeFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\MarketingTimeFont.xnb</Output>
+      <Time>2013-10-04T17:09:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\back.png</Source>
+      <Name>TenthScreen\back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\back.xnb</Output>
+      <Time>2013-10-20T03:40:04.2323834+02:00</Time>
+    </Item>
+    <Item>
+      <Source>TenthScreen\theme.mp3</Source>
+      <Name>TenthScreen\theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\theme.xnb</Output>
+      <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\TenthScreen\theme.wma</Extra>
+      <Time>2013-10-20T03:45:53.6698661+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
