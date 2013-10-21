@@ -55,7 +55,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             
             oldMan = new OldMan(new Vector2(319, DesignOptions.Bounds.MinY + 145));
-
+            
             fires = new List<AnimatedElement>();
             fires.Add(new AnimatedElement(base.Content.Load<Texture2D>("SecondScreen/Fire"),
                 "Fire1",

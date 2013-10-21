@@ -19,7 +19,9 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
             : base(BasicTextures.CargarTextura("SecondScreen/OldMan", "OldMan"),
             "OldMan",
             posicion)
-        { }
+        {
+            base.Frames = new FrameRateInfo();
+        }
 
     }
 }
