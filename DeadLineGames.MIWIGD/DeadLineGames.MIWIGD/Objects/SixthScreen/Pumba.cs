@@ -35,10 +35,10 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
             frames = new Dictionary<CharsState, FrameRateInfo>();
             frames.Add(CharsState.Idle, this.Frames);
             frames.Add(CharsState.Eating, new FrameRateInfo(4, 0.15f, 1, false));
-            frames.Add(CharsState.StartRun, new FrameRateInfo(3, 0.15f, 1, false));
+            frames.Add(CharsState.StartRun, new FrameRateInfo(3, 0.25f, 1, false));
             frames.Add(CharsState.Run, new FrameRateInfo(10, 0.15f, 1, false));
             frames.Add(CharsState.Turn, new FrameRateInfo(3, 0.25f, 1, false));
-            frames.Add(CharsState.Burp, new FrameRateInfo(11, 0.15f, 1, false));
+            frames.Add(CharsState.Burp, new FrameRateInfo(11, 0.07f, 1, false));
 
             cambiarFrame();
 
@@ -47,18 +47,23 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
         public override void Update(TimeSpan elapsed)
         {
             if (estado != CharsState.StartRun && estado != CharsState.Turn) actuaFrame = this.ActualFrame;
-            if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft)
-                || InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Left))
+            if (!isBurping)
             {
-                this.SpriteEffect = SpriteEffects.FlipHorizontally;
-                cambiarEstado(-MOVIMIENTO);
+                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft)
+                    || InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Left))
+                {
+                    this.SpriteEffect = SpriteEffects.FlipHorizontally;
+                    cambiarEstado(-MOVIMIENTO);
+                }
+                if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickRight)
+                    || InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Right))
+                {
+                    this.SpriteEffect = SpriteEffects.None;
+                    cambiarEstado(MOVIMIENTO);
+                }
             }
-            if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.LeftThumbstickRight)
-                || InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Right))
-            {
-                this.SpriteEffect = SpriteEffects.None;
-                cambiarEstado(MOVIMIENTO);
-            }
+            else
+                estado = CharsState.Burp;
 
             if ((InputState.GetInputState().GamepadOne.IsButtonUp(Buttons.LeftThumbstickLeft)
                 && InputState.GetInputState().KeyboardState.IsKeyUp(Keys.Left))
@@ -66,7 +71,8 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
                 && InputState.GetInputState().KeyboardState.IsKeyUp(Keys.Right)))
             {
                 if (estado != CharsState.Idle 
-                    && estado != CharsState.Eating)
+                    && estado != CharsState.Eating 
+                    && estado != CharsState.Burp)
                     estado = CharsState.Turn;
                 
                 cambiarEstado(0);
@@ -98,8 +104,10 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
                     if (this.ActualFrame == this.Frames.FrameCount - 1)
                     {
                         estado = CharsState.Idle;
-                        isEating = false;
-                        isBurping = false;
+                        if(isEating)
+                            isEating = false;
+                        if(isBurping)
+                            isBurping = false;
                     }
                     break;
 
@@ -123,7 +131,7 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
                     }
                     break;
 
-                case CharsState.Run:
+                case CharsState.Run: 
                     X = this.Posicion.X + Movimiento;
                     break;
 

@@ -8,6 +8,9 @@ using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
 using Microsoft.Xna.Framework.Graphics;
 using DeadLineGames.MIWIGD.Objects.SixthScreen;
+using NamoCode.Game.Class.Media;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -25,7 +28,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private bool EndScreen;
 
-        private int Score;
+        public static int Score;
 
         public SixthScreen(Game game)
             : base(game)
@@ -48,6 +51,13 @@ namespace DeadLineGames.MIWIGD.Screens
             Score = 0;
             EndScreen = false;
 
+            Player.Instance.Sounds.Clear();
+            Player.Instance.Sounds.Add(base.Content.Load<Song>("SixthScreen/Theme"), "Bugs");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/gulp"), "Gulp");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/burp"), "Burp");
+            Player.Instance.RepeatMusic = true;
+            Player.Instance.Play("Bugs");
+
             base.Initialize();
         }
 
@@ -67,7 +77,7 @@ namespace DeadLineGames.MIWIGD.Screens
             BasicTextures.CargarTextura("SixthScreen/Pumba/startrun", "startrun");
             BasicTextures.CargarTextura("SixthScreen/Pumba/run", "run");
             BasicTextures.CargarTextura("SixthScreen/Pumba/turn", "turn");
-            BasicTextures.CargarTextura("SixthScreen/Pumba/burp", "burp");
+            BasicTextures.CargarTextura("SixthScreen/Pumba/burping", "burp");
             pumba = new Pumba(new Vector2(285 - (BasicTextures.GetTexture("idle").Width / 4),
                 DesignOptions.Bounds.MaxY - 80));
         }
@@ -76,8 +86,11 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             if (!EndScreen)
             {
-                timon.Update(elapsed);
                 pumba.Update(elapsed);
+                if (!pumba.isBurping)
+                {
+                    timon.Update(elapsed);
+                }
                 Bugs.Instance.updateBugs(elapsed);
                 checkCollisions();
             }
@@ -95,24 +108,32 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private void checkCollisions()
         {
-
             foreach (Bug b in Bugs.Instance)
             {
                 if (pumba.HaveColision(b))
                 {
-                    if(pumba.estado == Objects.CharsState.Idle)
-                        pumba.isEating = true;
                     if (b.Posicion.Y >= pumba.Posicion.Y - 5
-                        && b.Posicion.Y <= pumba.Posicion.Y + 5)
+                        && b.Posicion.Y <= pumba.Center.Y + 5)
                     {
                         b.isEating = true;
                         Score++;
+                        if (Score == 10)
+                        {
+                            pumba.isBurping = true;
+                            Player.Instance.Play("Burp");
+                        }
+                        else
+                        {
+                            if (pumba.estado == Objects.CharsState.Idle)
+                                pumba.isEating = true;
+                            Player.Instance.Play("Gulp");
+                        }
+                                
                         if (b.actuaFrame == b.framesCount - 1)
                             EndScreen = true;
                     }
                 }
             }
-
         }
 
     }

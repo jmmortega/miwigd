@@ -31,16 +31,11 @@ Content\FifthScreen\RightTumbStick.xnb
 Content\SixthScreen\Background.xnb
 Content\SixthScreen\Bug.xnb
 Content\SeventhScreen\Background.xnb
-Content\SeventhScreen\Cloud.xnb
 Content\SeventhScreen\Mario.xnb
 Content\EightScreen\Background.xnb
 Content\EightScreen\House.xnb
 Content\EightScreen\MailBox.xnb
 Content\EightScreen\PaperBoy.xnb
-Content\TenScreen\Background.xnb
-Content\TenScreen\Finn.xnb
-Content\TenScreen\Jake.xnb
-Content\TenScreen\MarketingTimeFont.xnb
 Content\Common\tv.xnb
 Content\MenuScreen\PressStart.xnb
 Content\SecondScreen\Wall.xnb
@@ -57,7 +52,10 @@ Content\SeventhScreen\Sky.xnb
 Content\SeventhScreen\block.xnb
 Content\SeventhScreen\Coin.xnb
 Content\SixthScreen\Pumba\startrun.xnb
+<<<<<<< HEAD
 Content\SixthScreen\Pumba\burp.xnb
+=======
+>>>>>>> 4325ec804ea88eb8aa9c9f71692c63beadda5756
 Content\SixthScreen\Timon\idle.xnb
 Content\SixthScreen\Bugs\Bugs.xnb
 Content\SixthScreen\Timon\run.xnb
@@ -68,12 +66,34 @@ Content\SixthScreen\Pumba\run.xnb
 Content\SixthScreen\Pumba\turn.xnb
 Content\MenuScreen\TitleTheme.xnb
 Content\SeventhScreen\Theme.xnb
+<<<<<<< HEAD
+=======
+Content\SixthScreen\Theme.xnb
+>>>>>>> 4325ec804ea88eb8aa9c9f71692c63beadda5756
 Content\SecondScreen\ItemObtained.xnb
 Content\SecondScreen\ItemReceived.xnb
 Content\SecondScreen\Typing.xnb
 Content\SeventhScreen\Jump.xnb
 Content\SeventhScreen\Moneda.xnb
+<<<<<<< HEAD
+=======
+Content\SixthScreen\Pumba\burping.xnb
+Content\SixthScreen\Pumba\burp.xnb
+Content\SixthScreen\Pumba\gulp.xnb
+Content\TenthScreen\Background.xnb
+Content\TenthScreen\Finn.xnb
+Content\TenthScreen\Jake.xnb
+Content\TenthScreen\MarketingTimeFont.xnb
+Content\TenthScreen\back.xnb
+Content\TenthScreen\theme.xnb
+Content\TenthScreen\MTitle.xnb
+Content\TenthScreen\dancing.xnb
+Content\TenthScreen\theme2.xnb
+>>>>>>> 4325ec804ea88eb8aa9c9f71692c63beadda5756
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
+Content\SixthScreen\Theme.wma
+Content\TenthScreen\theme.wma
+Content\TenthScreen\theme2.wma
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map

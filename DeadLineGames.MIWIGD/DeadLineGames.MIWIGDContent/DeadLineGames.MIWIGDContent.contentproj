@@ -212,11 +212,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="SeventhScreen\Cloud.png">
-      <Name>Cloud</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="SeventhScreen\Mario.png">
       <Name>Mario</Name>
       <Importer>TextureImporter</Importer>
@@ -246,22 +241,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TenScreen\Background.png">
+    <Compile Include="TenthScreen\Background.png">
       <Name>Background</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="TenScreen\Finn.png">
+    <Compile Include="TenthScreen\Finn.png">
       <Name>Finn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="TenScreen\Jake.png">
+    <Compile Include="TenthScreen\Jake.png">
       <Name>Jake</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="TenScreen\MarketingTimeFont.png">
+    <Compile Include="TenthScreen\MarketingTimeFont.png">
       <Name>MarketingTimeFont</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
@@ -431,8 +426,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SixthScreen\Pumba\burp.png">
-      <Name>burp</Name>
+    <Compile Include="SixthScreen\Pumba\burping.png">
+      <Name>burping</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -489,6 +484,62 @@
       <Name>turn</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Theme.mp3">
+      <Name>Theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\burp.wav">
+      <Name>burp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SixthScreen\Pumba\gulp.wav">
+      <Name>gulp</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TenthScreen\back.png">
+      <Name>back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TenthScreen\theme.mp3">
+      <Name>theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TenthScreen\MTitle.png">
+      <Name>MTitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TenthScreen\dancing.png">
+      <Name>dancing</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TenthScreen\theme2.mp3">
+      <Name>theme2</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

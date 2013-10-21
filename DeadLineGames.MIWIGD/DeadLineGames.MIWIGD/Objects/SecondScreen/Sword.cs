@@ -18,6 +18,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
         public Sword(Vector2 posicion)
             : base(BasicTextures.CargarTextura("SecondScreen/Sword", "Sword"),
             "Sword",
+            new FrameRateInfo(),
             posicion)
         { }
 

@@ -59,8 +59,12 @@ namespace DeadLineGames.MIWIGD
 
             base.Initialize();
 
+<<<<<<< HEAD
 
             ScreenManager.TransitionTo("Menu");
+=======
+            ScreenManager.TransitionTo("Tenth");
+>>>>>>> 4325ec804ea88eb8aa9c9f71692c63beadda5756
         }
 
         /// <summary>
@@ -78,6 +82,7 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Second", new SecondScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
+            ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
         }
 
         /// <summary>

@@ -68,7 +68,7 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
             switch (estado)
             {
                 case CharsState.Idle:
-                    if (timeToThrow % 10 == 0)
+                    if (timeToThrow % 30 == 0)
                     {
                         estado = CharsState.Run;
                         TIMETOTHROWBUG = Azar.Instance.GetNumber(50, 200);
@@ -153,7 +153,9 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
         {
             if (timeToThrow % TIMETOTHROWBUG == 0)
             {
-                Bugs.Instance.Add(new Bug("Bug_" + randomBug(),
+                int bug;
+                while ((bug = randomBug()) == -1);
+                Bugs.Instance.Add(new Bug("Bug_" + bug,
                     new Vector2(this.Center.X - 15, this.Posicion.Y + this.Height)));
                 TIMETOTHROWBUG = Azar.Instance.GetNumber(50, 200);
                 timeToThrow = 0;
@@ -168,7 +170,12 @@ namespace DeadLineGames.MIWIGD.Objects.SixthScreen
             for (int i = 1; i <= 7; i++)
             {
                 if (porcentaje <= probabilidad * i)
-                    return i - 1;
+                {
+                    if (Screens.SixthScreen.Score < 15 && i == 7)
+                        break;
+                    else
+                        return i - 1;
+                }
             }
             return -1;
         }
