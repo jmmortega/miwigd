@@ -15,6 +15,7 @@ using NamoCode.Game.Utils;
 using NamoCode.Game.Class.Media;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -49,13 +50,16 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public SecondScreen(Game game)
             : base(game)
-        { }
+        {
+            
+        }
 
         public override void Initialize()
         {
-            
+            (base.Game as Game1).ClearColor = Color.Black;
+                        
             oldMan = new OldMan(new Vector2(319, DesignOptions.Bounds.MinY + 145));
-
+            
             fires = new List<AnimatedElement>();
             fires.Add(new AnimatedElement(base.Content.Load<Texture2D>("SecondScreen/Fire"),
                 "Fire1",
@@ -109,11 +113,11 @@ namespace DeadLineGames.MIWIGD.Screens
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back))
                 this.GoMenu();
 
-            if (charType < Strings.SecondScreenDangerous.Length)
+            if (charType < Strings.DANGEROUS.Length)
             {
                 if (timeTyping % 4 == 0)
                 {
-                    type.LabelContent += Strings.SecondScreenDangerous[charType];
+                    type.LabelContent += Strings.DANGEROUS[charType];
                     Player.Instance.Play("Typing", 0.70f);
                     charType++;
                 }
@@ -149,7 +153,14 @@ namespace DeadLineGames.MIWIGD.Screens
                         goodByeOldMan++;
                     }
                     if (link.Posicion.Y + link.Height >= DesignOptions.Bounds.MaxY - 5)
-                        ScreenManager.TransitionTo("Seventh");
+                    {
+                        //ScreenManager.TransitionTo("Seventh");
+                        Dictionary<string, object> parameters = new Dictionary<string, object>();
+                        parameters.Add(Consts.PARAMETERTITLE, Strings.THIRD_TITLE);
+                        parameters.Add(Consts.PARAMETERSCREEN, "Third");
+
+                        ScreenManager.TransitionTo("TransitionScreen", parameters);
+                    }
                 }
 
                 fires.ForEach(x => x.Update(elapsed));

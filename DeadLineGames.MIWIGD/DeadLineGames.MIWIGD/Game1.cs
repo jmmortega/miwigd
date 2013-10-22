@@ -13,6 +13,7 @@ using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
 using NamoCode.Game.Class.Screens;
 using DeadLineGames.MIWIGD.Screens;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD
 {
@@ -26,8 +27,18 @@ namespace DeadLineGames.MIWIGD
 
         private BackGround m_Fondo;
 
+        private Color m_clearColor;
+
+        public Color ClearColor
+        {
+            get { return m_clearColor; }
+            set { m_clearColor = value; }
+        }
+
+
         public Game1()
         {
+            
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
@@ -39,7 +50,7 @@ namespace DeadLineGames.MIWIGD
             DesignOptions.Bounds = new Bounds(50, 620, 35, 435, 50, 620, 35, 435);
 
             BasicTextures.GraphicsManager = graphics;
-            BasicTextures.ContentManager = Content;
+            BasicTextures.ContentManager = Content;            
         }
 
         /// <summary>
@@ -55,11 +66,11 @@ namespace DeadLineGames.MIWIGD
                    base.Content.Load<Texture2D>("Common/tv"),
                    DesignOptions.Bounds);
 
-            String g = Strings.SecondScreenDangerous;
-
+            DesignOptions.Fuente = base.Content.Load<SpriteFont>("FirstScreen/PokemonFont");
+            
             base.Initialize();
-
-            ScreenManager.TransitionTo("Tenth");
+            
+            ScreenManager.TransitionTo("Menu");
         }
 
         /// <summary>
@@ -74,10 +85,15 @@ namespace DeadLineGames.MIWIGD
             // TODO: use this.Content para cargar aquí el contenido del juego
             ScreenManager.AddScreen("Menu", new MenuScreen(this));
             ScreenManager.AddScreen("First", new FirstScreen(this));
+            ScreenManager.AddScreen("FirstScreenDetail", new FirstScreenDetail(this));
             ScreenManager.AddScreen("Second", new SecondScreen(this));
+            ScreenManager.AddScreen("Third", new ThirdScreen(this));
+            ScreenManager.AddScreen("Forth", new ForthScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
             ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
+
+            ScreenManager.AddScreen("TransitionScreen", new TransitionScreen(this));
         }
 
         /// <summary>
@@ -112,7 +128,7 @@ namespace DeadLineGames.MIWIGD
         /// <param name="gameTime">Proporciona una instantánea de los valores de tiempo.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Black);
+            GraphicsDevice.Clear(ClearColor);
 
             // TODO: agregue aquí el código de dibujo
             ScreenManager.CurrentScreen.Draw();

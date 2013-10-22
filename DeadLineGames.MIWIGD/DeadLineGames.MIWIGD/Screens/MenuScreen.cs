@@ -12,6 +12,7 @@ using NamoCode.Game.Class.Media;
 using Microsoft.Xna.Framework.Media;
 using NamoCode.Game.Class.Input;
 using Microsoft.Xna.Framework.Input;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -35,6 +36,8 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Initialize()
         {
+            (base.Game as Game1).ClearColor = Color.Black;
+
             title = new AnimatedElement(base.Content.Load<Texture2D>("MenuScreen/Title"),
                 "title",
                 new Vector2(94.50f, DesignOptions.Bounds.MinY - 280),
@@ -75,7 +78,12 @@ namespace DeadLineGames.MIWIGD.Screens
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Start) ||
                     InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Enter))
                 {
-                    ScreenManager.TransitionTo("Second");
+                    //ScreenManager.TransitionTo("First");
+                    Dictionary<string, object> parameters = new Dictionary<string,object>();
+
+                    parameters.Add(Consts.PARAMETERTITLE, Strings.FIRST_TITLE);
+                    parameters.Add(Consts.PARAMETERSCREEN, "First");
+                    ScreenManager.TransitionTo("TransitionScreen", parameters);
                 }
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back) ||
                     InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Escape))

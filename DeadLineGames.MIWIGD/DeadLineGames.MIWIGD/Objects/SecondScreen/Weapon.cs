@@ -19,6 +19,7 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
             : base(textura, name, new FrameRateInfo(), posicion)
         {
             catched = false;
+            base.Frames = new NamoCode.Game.Utils.FrameRateInfo();
         }
     }
 }

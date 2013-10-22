@@ -20,7 +20,9 @@ namespace DeadLineGames.MIWIGD.Objects.SecondScreen
             "OldMan",
             new FrameRateInfo(),
             posicion)
-        { }
+        {
+            base.Frames = new FrameRateInfo();
+        }
 
     }
 }
