@@ -70,7 +70,7 @@ namespace DeadLineGames.MIWIGD
             
             base.Initialize();
             
-            ScreenManager.TransitionTo("Third");
+            ScreenManager.TransitionTo("Menu");
         }
 
         /// <summary>
