@@ -60,7 +60,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         protected override void GoBack()
         {
-            base.GoBack();
+            Game.Exit();
         }
 
         public override void Update(TimeSpan elapsed)

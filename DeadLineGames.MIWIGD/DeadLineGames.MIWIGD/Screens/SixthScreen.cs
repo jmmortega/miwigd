@@ -11,6 +11,8 @@ using DeadLineGames.MIWIGD.Objects.SixthScreen;
 using NamoCode.Game.Class.Media;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Input;
+using NamoCode.Game.Class.Input;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -82,8 +84,18 @@ namespace DeadLineGames.MIWIGD.Screens
                 DesignOptions.Bounds.MaxY - 80));
         }
 
+        protected void GoBack()
+        {
+            ScreenManager.TransitionTo("Menu");
+        }
+
         public override void Update(TimeSpan elapsed)
         {
+
+            if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back)
+                || InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Escape))
+                this.GoBack();
+
             if (!EndScreen)
             {
                 pumba.Update(elapsed);

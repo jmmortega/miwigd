@@ -70,7 +70,7 @@ namespace DeadLineGames.MIWIGD
             
             base.Initialize();
             
-            ScreenManager.TransitionTo("Menu");
+            ScreenManager.TransitionTo("Fifth");
         }
 
         /// <summary>
@@ -89,6 +89,7 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Second", new SecondScreen(this));
             ScreenManager.AddScreen("Third", new ThirdScreen(this));
             ScreenManager.AddScreen("Forth", new ForthScreen(this));
+            ScreenManager.AddScreen("Fifth", new FifthScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
             ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
@@ -113,9 +114,9 @@ namespace DeadLineGames.MIWIGD
         protected override void Update(GameTime gameTime)
         {
             // Permite salir del juego
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
-                || Keyboard.GetState(PlayerIndex.One).IsKeyDown(Keys.Escape))
-                this.Exit();
+            //if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
+            //    || Keyboard.GetState(PlayerIndex.One).IsKeyDown(Keys.Escape))
+            //    this.Exit();
 
             // TODO: agregue aquí su lógica de actualización
             ScreenManager.CurrentScreen.Update(gameTime.ElapsedGameTime);

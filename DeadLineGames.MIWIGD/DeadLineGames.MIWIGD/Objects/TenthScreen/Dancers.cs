@@ -23,7 +23,7 @@ namespace DeadLineGames.MIWIGD.Objects.TenthScreen
         public override void Update(TimeSpan elapsedtime)
         {
             if (this.Opacity < 1)
-                this.Opacity += 0.001f;
+                this.Opacity += 0.005f;
 
             base.Update(elapsedtime);
         }

@@ -14,10 +14,6 @@ Content\ForthScreen\HudFrame.xnb
 Content\ForthScreen\Photo.xnb
 Content\ForthScreen\PhotoX.xnb
 Content\FifthScreen\Background.xnb
-Content\FifthScreen\ButtonA.xnb
-Content\FifthScreen\ButtonB.xnb
-Content\FifthScreen\ButtonX.xnb
-Content\FifthScreen\ButtonY.xnb
 Content\FifthScreen\DeveloperSpriteSheet.xnb
 Content\FifthScreen\LeftThumbStick.xnb
 Content\FifthScreen\RightTumbStick.xnb
@@ -98,6 +94,7 @@ Content\ThirdScreen\TrianguloNaranja.xnb
 Content\ThirdScreen\TrianguloRosa.xnb
 Content\ThirdScreen\TrianguloVerde.xnb
 Content\ThirdScreen\Life.xnb
+Content\FifthScreen\QTEButtons.xnb
 Content\MenuScreen\TitleTheme.xnb
 Content\SeventhScreen\Theme.xnb
 Content\SixthScreen\Theme.xnb
@@ -112,12 +109,15 @@ Content\SeventhScreen\Jump.xnb
 Content\SeventhScreen\Moneda.xnb
 Content\SixthScreen\Pumba\burp.xnb
 Content\SixthScreen\Pumba\gulp.xnb
+Content\FifthScreen\programando.xnb
+Content\FifthScreen\theme.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SixthScreen\Theme.wma
 Content\TenthScreen\theme.wma
 Content\TenthScreen\theme2.wma
 Content\FirstScreen\PokemonTheme.wma
+Content\FifthScreen\theme.wma
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
 Content\ThirdScreen\Level0.TXT

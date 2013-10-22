@@ -121,6 +121,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+    <Compile Include="FifthScreen\ButtonA.png">
+      <Name>ButtonA</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="FifthScreen\ButtonB.png">
+      <Name>ButtonB</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="FifthScreen\ButtonX.png">
+      <Name>ButtonX</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="FifthScreen\ButtonY.png">
+      <Name>ButtonY</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
     <Compile Include="FifthScreen\DeveloperSpriteSheet.png">
       <Name>DeveloperSpriteSheet</Name>
       <Importer>TextureImporter</Importer>
@@ -491,6 +511,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="FifthScreen\QTEButtons.png">
+      <Name>QTEButtons</Name>
+=======
     <Compile Include="FirstScreen\AshMom.png">
       <Name>AshMom</Name>
       <Importer>TextureImporter</Importer>
@@ -692,29 +716,9 @@
   <ItemGroup>
     <Compile Include="ThirdScreen\Life.png">
       <Name>Life</Name>
+>>>>>>> be80a9edc4f0b5ad8b6749540ee81ab30f25b798
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="FifthScreen\QTEButtons.png">
-      <Name>QTEButtons</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="FifthScreen\programando.png">
-      <Name>programando</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="FifthScreen\theme.mp3">
-      <Name>theme</Name>
-      <Importer>Mp3Importer</Importer>
-      <Processor>SongProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
