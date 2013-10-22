@@ -80,6 +80,7 @@
     <Compile Include="Objects\EigthScreen\NewsPaper.cs" />
     <Compile Include="Objects\EigthScreen\PaperBoy.cs" />
     <Compile Include="Objects\Enums.cs" />
+    <Compile Include="Objects\FifthScreen\QTEPusher.cs" />
     <Compile Include="Objects\FirstScreen\Ash.cs" />
     <Compile Include="Objects\FirstScreen\Mother.cs" />
     <Compile Include="Objects\ForthScreen\BadGuy.cs" />
@@ -171,7 +172,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Objects\FifthScreen\" />
     <Folder Include="Objects\NinethScreen\" />
   </ItemGroup>
   <ItemGroup>
