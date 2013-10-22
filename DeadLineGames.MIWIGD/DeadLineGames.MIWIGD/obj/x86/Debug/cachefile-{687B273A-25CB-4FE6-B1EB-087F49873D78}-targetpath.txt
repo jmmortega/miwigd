@@ -118,6 +118,7 @@ Content\SixthScreen\Pumba\gulp.xnb
 Content\FifthScreen\programando.xnb
 Content\FifthScreen\theme.xnb
 Content\FifthScreen\theme.wma
+Content\FifthScreen\punch.xnb
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
 Content\ThirdScreen\Level0.TXT

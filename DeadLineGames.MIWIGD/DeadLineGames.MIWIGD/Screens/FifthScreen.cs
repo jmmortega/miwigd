@@ -82,9 +82,9 @@ namespace DeadLineGames.MIWIGD.Screens
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<Song>("FifthScreen/theme"), "EyeTiger");
-            //Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("FifthScreen/punch"), "Punch");
+            Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("FifthScreen/punch"), "Punch");
             Player.Instance.RepeatMusic = true;
-            Player.Instance.Play("EyeTiger");
+            Player.Instance.Play("EyeTiger", 0.70f);
 
             base.Initialize();
         }
@@ -118,6 +118,7 @@ namespace DeadLineGames.MIWIGD.Screens
                     press = false;
                     if (back.SecondPerFrame > 0.10f)
                         back.SecondPerFrame -= 0.05f;
+                    Player.Instance.Play("Punch");
                 }
                 else
                 {
@@ -132,7 +133,6 @@ namespace DeadLineGames.MIWIGD.Screens
                 {
                     bPress = QTEPusher.Instance.AButton;
                     press = true;
-                    //Player.Instance.Play("Punch");
                 }
 
                 updateStrings(elapsed);

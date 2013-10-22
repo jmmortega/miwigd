@@ -1025,6 +1025,15 @@
       <Extra>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\theme.wma</Extra>
       <Time>2013-10-22T20:51:17.6127506+02:00</Time>
     </Item>
+    <Item>
+      <Source>FifthScreen\punch.wav</Source>
+      <Name>FifthScreen\punch</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\punch.xnb</Output>
+      <Time>2013-10-22T21:07:38.8411722+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>
