@@ -35,7 +35,6 @@ namespace DeadLineGames.MIWIGD
             set { m_clearColor = value; }
         }
 
-
         public Game1()
         {
             
@@ -61,16 +60,18 @@ namespace DeadLineGames.MIWIGD
         /// </summary>
         protected override void Initialize()
         {
+           
             // TODO: agregue aquí su lógica de inicialización
             m_Fondo = new BackGround(
-                   base.Content.Load<Texture2D>("Common/tv"),
-                   DesignOptions.Bounds);
+                    base.Content.Load<Texture2D>("Common/tv"),
+                    DesignOptions.Bounds);
 
             DesignOptions.Fuente = base.Content.Load<SpriteFont>("FirstScreen/PokemonFont");
-            
+
             base.Initialize();
-            
-            ScreenManager.TransitionTo("Fifth");
+
+            ScreenManager.TransitionTo("Eighth");
+
         }
 
         /// <summary>
@@ -79,6 +80,7 @@ namespace DeadLineGames.MIWIGD
         /// </summary>
         protected override void LoadContent()
         {
+
             // Crea un SpriteBatch nuevo para dibujar texturas.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
@@ -92,6 +94,7 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Fifth", new FifthScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
+            ScreenManager.AddScreen("Eighth", new EighthScreen(this));
             ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
 
             ScreenManager.AddScreen("TransitionScreen", new TransitionScreen(this));

@@ -209,42 +209,6 @@
       <Time>2013-10-12T23:22:46.2674333+02:00</Time>
     </Item>
     <Item>
-      <Source>EightScreen\Background.png</Source>
-      <Name>EightScreen\Background</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\Background.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>EightScreen\House.png</Source>
-      <Name>EightScreen\House</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\House.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>EightScreen\MailBox.png</Source>
-      <Name>EightScreen\MailBox</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\MailBox.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
-      <Source>EightScreen\PaperBoy.png</Source>
-      <Name>EightScreen\PaperBoy</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EightScreen\PaperBoy.xnb</Output>
-      <Time>2013-10-04T17:09:02+02:00</Time>
-    </Item>
-    <Item>
       <Source>TenthScreen\Background.png</Source>
       <Name>TenthScreen\Background</Name>
       <Importer>TextureImporter</Importer>
@@ -1032,7 +996,115 @@
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\FifthScreen\punch.xnb</Output>
-      <Time>2013-10-22T21:07:38.8411722+02:00</Time>
+      <Time>2013-10-22T21:10:11.8405586+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\background.png</Source>
+      <Name>EighthScreen\background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\background.xnb</Output>
+      <Time>2013-10-23T10:27:03.1344414+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\MonkeyFont.png</Source>
+      <Name>EighthScreen\MonkeyFont</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\MonkeyFont.xnb</Output>
+      <Time>2013-10-23T13:46:42.0907249+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\MButtons.png</Source>
+      <Name>EighthScreen\MButtons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\MButtons.xnb</Output>
+      <Time>2013-10-23T12:56:51.0913098+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\idle.png</Source>
+      <Name>EighthScreen\idle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\idle.xnb</Output>
+      <Time>2013-10-24T13:55:06.7129585+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Guybrush\guybrush-attack.png</Source>
+      <Name>EighthScreen\Guybrush\guybrush-attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Guybrush\guybrush-attack.xnb</Output>
+      <Time>2013-10-24T13:55:38.0077872+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Guybrush\guybrush-speak.png</Source>
+      <Name>EighthScreen\Guybrush\guybrush-speak</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Guybrush\guybrush-speak.xnb</Output>
+      <Time>2013-10-24T18:45:34.1313566+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Guybrush\guybrush-win.png</Source>
+      <Name>EighthScreen\Guybrush\guybrush-win</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Guybrush\guybrush-win.xnb</Output>
+      <Time>2013-10-24T13:55:38.0315748+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Pirate\chema-attack.png</Source>
+      <Name>EighthScreen\Pirate\chema-attack</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Pirate\chema-attack.xnb</Output>
+      <Time>2013-10-24T13:56:56.601166+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Pirate\chema-speak.png</Source>
+      <Name>EighthScreen\Pirate\chema-speak</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Pirate\chema-speak.xnb</Output>
+      <Time>2013-10-24T13:56:56.5861653+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\Pirate\chema-win.png</Source>
+      <Name>EighthScreen\Pirate\chema-win</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\Pirate\chema-win.xnb</Output>
+      <Time>2013-10-24T13:56:56.5931664+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\start.png</Source>
+      <Name>EighthScreen\start</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\start.xnb</Output>
+      <Time>2013-10-24T13:58:38.7771662+02:00</Time>
+    </Item>
+    <Item>
+      <Source>EighthScreen\swords.wav</Source>
+      <Name>EighthScreen\swords</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Fabio\Documents\Visual Studio 2010\Projects\miwigd\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\swords.xnb</Output>
+      <Time>2013-10-25T00:33:20.0249378+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
