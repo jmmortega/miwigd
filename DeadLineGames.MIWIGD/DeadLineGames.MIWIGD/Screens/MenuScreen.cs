@@ -29,6 +29,7 @@ namespace DeadLineGames.MIWIGD.Screens
         private AnimatedElement start;
 
         private int timetoscroll = 0;
+        private bool m_playedSong = false;
 
         public MenuScreen(Game game)
             : base(game)
@@ -49,11 +50,7 @@ namespace DeadLineGames.MIWIGD.Screens
                 new FrameRateInfo(2, 0.50f));
             start.Posicion = new Vector2(334.5f - (start.Width / 2), DesignOptions.Bounds.MaxY - 64);
             start.Visible = false;
-
-            Player.Instance.Sounds.Clear();
-            Player.Instance.Sounds.Add(base.Content.Load<Song>("MenuScreen/TitleTheme"), "TitleTheme");
-            Player.Instance.Play("TitleTheme");
-
+            
             timetoscroll = 0;
             base.Initialize();
         }
@@ -65,6 +62,15 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Update(TimeSpan elapsed)
         {
+            if (m_playedSong == false)
+            {
+                Player.Instance.Sounds.Clear();
+                Player.Instance.Sounds.Add(base.Content.Load<Song>("MenuScreen/TitleTheme"), "TitleTheme");
+                Player.Instance.Play("TitleTheme");
+                Player.Instance.RepeatMusic = false;
+                m_playedSong = true;
+            }
+
             if (title.Posicion.Y <= DesignOptions.Bounds.MinY + 30)
             {
                 if (timetoscroll % TIMESCROLL == 0)
@@ -84,6 +90,7 @@ namespace DeadLineGames.MIWIGD.Screens
                     parameters.Add(Consts.PARAMETERTITLE, Strings.FIRST_TITLE);
                     parameters.Add(Consts.PARAMETERSCREEN, "First");
                     ScreenManager.TransitionTo("TransitionScreen", parameters);
+                    Player.Instance.Stop();
                 }
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back) ||
                     InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Escape))

@@ -167,7 +167,9 @@ namespace DeadLineGames.MIWIGD.Screens
 
                 checkCollisions();
             }
-            //base.Update(elapsed);
+
+            ChangeSlide();
+            base.Update(elapsed);
         }
 
         public override void Draw()
@@ -235,6 +237,25 @@ namespace DeadLineGames.MIWIGD.Screens
                     else
                         link.blockedDir.Clear();
                 }
+            }
+        }
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                ScreenManager.TransitionTo("FirstScreenDetail");
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.THIRD_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Third");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
             }
         }
 

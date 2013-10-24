@@ -17,6 +17,17 @@ namespace DeadLineGames.MIWIGD.Objects.Common
 
         public const string FORTH_TITLE = "BrainStorming...";
 
+        public const string FIFTH_TITLE = "Develop!";
+
+        public const string SIXTH_TITLE = "Catch the bugs";
+
+        public const string SEVENTH_TITLE = "Business model";
+
+        public const string EIGHT_TITLE = "Be social my friend";
+
+        public const string NINE_TITLE = "Time to publish";
+
+        public const string TEN_TITLE = "Marketing Time!";
 
 
         //FirstScreen

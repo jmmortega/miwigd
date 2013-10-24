@@ -98,15 +98,19 @@ namespace DeadLineGames.MIWIGD.Screens
 
             base.Input = InputState.GetInputState();
 
-            if (base.Input.KeyboardState.IsKeyDown(Keys.Space) == true && m_pressed == false)
+            if (((base.Input.KeyboardState.IsKeyDown(Keys.Space) == true) ||
+                (base.Input.GamepadOne.IsButtonDown(Buttons.A) == true)) && m_pressed == false)
             {
                 m_pressed = true;
                 m_dialogControl.NextLine();                
             }
-            else if(base.Input.KeyboardState.IsKeyUp(Keys.Space) == true)
+            else if((base.Input.KeyboardState.IsKeyUp(Keys.Space) == true) &&
+                (base.Input.GamepadOne.IsButtonUp(Buttons.A) == true))
             {
                 m_pressed = false;
-            }                                    
+            }
+
+            ChangeSlide();
         }
 
         public override void Draw()
@@ -117,8 +121,24 @@ namespace DeadLineGames.MIWIGD.Screens
             
 
             base.Draw();
+        }
 
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
 
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                ScreenManager.TransitionTo("First");
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SECOND_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Second");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);                
+            }
         }
     }
 }

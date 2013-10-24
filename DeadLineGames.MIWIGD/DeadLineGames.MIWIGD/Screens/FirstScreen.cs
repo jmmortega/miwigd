@@ -45,7 +45,6 @@ namespace DeadLineGames.MIWIGD.Screens
                 {
                     m_lookDirection = value;
                 }
-
             }
         }
         
@@ -77,8 +76,7 @@ namespace DeadLineGames.MIWIGD.Screens
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<Song>("FirstScreen/PokemonTheme"), "PokemonTheme");
             Player.Instance.Play("PokemonTheme");
-
-
+            
             base.Initialize();
         }
 
@@ -121,17 +119,18 @@ namespace DeadLineGames.MIWIGD.Screens
         }
 
         #region Update
-
+        
         public override void Update(TimeSpan elapsed)
         {
             base.Update(elapsed);
             base.Input = InputState.GetInputState();
-
+            
             m_dialogControl.Update(elapsed);
 
             if (m_dialogControl.Visible == true)
             {
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Space) == true)
+                if ((base.Input.KeyboardState.IsKeyDown(Keys.Space) == true) ||
+                    (base.Input.GamepadOne.IsButtonDown(Buttons.A) == true))
                 {
                     if (m_dialogControl.isEndOfPharagraph == true)
                     {
@@ -148,7 +147,8 @@ namespace DeadLineGames.MIWIGD.Screens
                 }
             }
 
-            if (base.Input.KeyboardState.IsKeyDown(Keys.Space) == true && m_readyToTalk == true)
+            if (((base.Input.KeyboardState.IsKeyDown(Keys.Space) == true) ||
+                (base.Input.GamepadOne.IsButtonDown(Buttons.A) == true)) && m_readyToTalk == true)
             {
                 if(m_dialogControl.Visible == false)
                 {
@@ -194,6 +194,8 @@ namespace DeadLineGames.MIWIGD.Screens
                     }
                 }
             }
+
+            ChangeSlide();
         }
         
         private void ChangeScreen()
@@ -250,6 +252,26 @@ namespace DeadLineGames.MIWIGD.Screens
 
         
         
+        #endregion
+
+        #region ChangeScreen
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                ScreenManager.TransitionTo("Menu");
+                Player.Instance.Stop();
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true) 
+            {
+                ScreenManager.TransitionTo("FirstScreenDetail");
+                Player.Instance.Stop();
+            }
+        }
+
         #endregion
 
 

@@ -43,10 +43,10 @@ namespace DeadLineGames.MIWIGD
             Content.RootDirectory = "Content";
             IsMouseVisible = false;
             //graphics.IsFullScreen = true;
-
+            
             graphics.PreferredBackBufferWidth = 800;
             graphics.PreferredBackBufferHeight = 480;
-
+                                                  
             DesignOptions.Bounds = new Bounds(50, 620, 35, 435, 50, 620, 35, 435);
 
             BasicTextures.GraphicsManager = graphics;
@@ -69,8 +69,8 @@ namespace DeadLineGames.MIWIGD
             DesignOptions.Fuente = base.Content.Load<SpriteFont>("FirstScreen/PokemonFont");
             
             base.Initialize();
-            
-            ScreenManager.TransitionTo("Fifth");
+
+            ScreenManager.TransitionTo("Menu");
         }
 
         /// <summary>
@@ -92,6 +92,8 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Fifth", new FifthScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
+            ScreenManager.AddScreen("Eight", new SeventhScreen(this));
+            ScreenManager.AddScreen("Nineth", new NinethScreen(this));
             ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
 
             ScreenManager.AddScreen("TransitionScreen", new TransitionScreen(this));

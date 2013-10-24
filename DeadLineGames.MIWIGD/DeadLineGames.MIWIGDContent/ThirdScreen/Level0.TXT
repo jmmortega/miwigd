@@ -1,4 +1,4 @@
-Level1|61
+Level1|21
 
 &&M;Nombre;Número de malos;Posicion;Transición
 
@@ -15,33 +15,4 @@ Level1|61
 17:M;CirculoRojo;4;90,-10;0.15
 18:M;CirculoRojo;4;150,-10;0.15|M;CirculoRojo;7;210,810;0.15
 19:M;CirculoRojo;4;270,-10;0.15|M;CirculoRojo;7;320,810;0.15
-20:M;CirculoRojo;4;350,-10;0.15|M;CirculoRojo;7;396,810;0.15
-22:M;TrianguloAmarillo;3;390,700;0.5
-23:M;TrianguloAmarillo;3;390,50;0.5
-24:M;RectanguloNaranja;6;490,100;0.75|M;RectanguloNaranja;10;-10,700;0.75
-25:M;TrianguloAmarillo;3;390,700;0.5
-26:M;TrianguloAmarillo;3;390,50;0.5
-27:M;TrianguloAmarillo;3;390,800;0.5
-29:M;TrianguloAmarillo;3;390,100;0.5
-31:M;CirculoRojo;4;460,-10;0.15
-32:M;CirculoRojo;4;250,-10;0.15
-33:M;CirculoRojo;4;20,-10;0.15
-35:M;TrianguloAmarillo;3;15,15;0.5
-37:M;CirculoRojo;4;250,-10;0.15
-39:M;RectanguloNaranja;6;490,100;0.75
-41:M;TrianguloAmarillo;3;15,15;0.5
-43:M;CirculoRojo;4;20,-10;0.15
-44:M;RectanguloNaranja;6;-10,50;0.75
-46:M;CirculoRojo;4;20,-10;0.15
-47:M;CirculoRojo;4;90,-10;0.15
-48:M;CirculoRojo;4;150,-10;0.15|M;CirculoRojo;7;210,810;0.15
-49:M;CirculoRojo;4;270,-10;0.15|M;CirculoRojo;7;320,810;0.15
-50:M;CirculoRojo;4;350,-10;0.15|M;CirculoRojo;7;396,810;0.15
-52:M;TrianguloAmarillo;3;390,700;0.5
-53:M;TrianguloAmarillo;3;390,50;0.5
-54:M;RectanguloNaranja;6;490,100;0.75|M;RectanguloNaranja;6;-10,676;0.75
-55:M;TrianguloAmarillo;3;390,700;0.5
-56:M;TrianguloAmarillo;3;390,50;0.5
-57:M;TrianguloAmarillo;3;390,800;0.5
-59:M;TrianguloAmarillo;3;390,100;0.5
-60:F;Boss1;1;200,-50;0
+20:F;Boss1;1;200,-50;0

@@ -13,6 +13,7 @@ using NamoCode.Game.Class.Input;
 using NamoCode.Game.Class.Media;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -139,6 +140,16 @@ namespace DeadLineGames.MIWIGD.Screens
 
                 QTEPusher.Instance.playButton(elapsed);
             }
+            else
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Sixth");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
+
+            ChangeSlide();
             base.Update(elapsed);
         }
 
@@ -213,6 +224,28 @@ namespace DeadLineGames.MIWIGD.Screens
             Time.Draw(base.SpriteBatch);
             QTEPusher.Instance.Draw(base.SpriteBatch);
             base.Draw();
+        }
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Forth");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SIXTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Sixth");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
         }
 
     }

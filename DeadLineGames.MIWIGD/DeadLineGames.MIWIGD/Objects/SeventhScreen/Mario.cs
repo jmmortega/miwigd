@@ -15,7 +15,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
 {
     public class Mario : AObject
     {
-
+        
         private const int TOTALJUMPTIME = 30;
 
         private float posYInit = 0;
@@ -25,6 +25,9 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         private bool isOnScreen = false;
         public bool upper = false;
         public Dictionary<Direction, bool> lockDir;
+
+        public delegate void HandleMarioIsOut(object sender, EventArgs e);
+        public event HandleMarioIsOut OnMarioIsOut;
 
         public Mario(Vector2 posicion)
             : base(BasicTextures.GetTexture("Mario"), 
@@ -51,12 +54,12 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
             }
             else
             {
-                mover();
+                Mover();
             }
             base.Update(elapsed);
         }
 
-        public void mover()
+        public void Mover()
         {
             //int speed = 0;
             float posX = this.Posicion.X;
@@ -107,7 +110,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
                     upper = true;
                 }
                 else
-                    posY = jumping();
+                    posY = Jumping();
             }
             else
             {
@@ -117,7 +120,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
                     {
                         jump = oldJump;
                     }
-                    posY = falling();
+                    posY = Falling();
                 }
                 else
                 {
@@ -151,10 +154,18 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
                     this.Frames.Pause = true;
             }
 
+            if (base.Posicion.X > DesignOptions.Bounds.MaxX)
+            {
+                if (OnMarioIsOut != null)
+                {
+                    OnMarioIsOut(this, new EventArgs());
+                }
+            }
+
             this.SetPosicion(posX, posY);
         }
-
-        private float jumping()
+        
+        private float Jumping()
         {
             float posY = this.Posicion.Y;
             if (jumpTime > 0)
@@ -173,7 +184,7 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         }
 
 
-        private float falling()
+        private float Falling()
         {
             float posY = this.Posicion.Y;
             if (posY <= posYInit)

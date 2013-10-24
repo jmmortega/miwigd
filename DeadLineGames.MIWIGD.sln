@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadLineGames.MIWIGD", "Dea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadLineGames.MIWIGDContent", "DeadLineGames.MIWIGD\DeadLineGames.MIWIGDContent\DeadLineGames.MIWIGDContent.contentproj", "{687B273A-25CB-4FE6-B1EB-087F49873D78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadLineGames.MIWIGD XBOX 360", "DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD XBOX 360.csproj", "{343EAE5A-1009-4E5E-AACC-2378F5DF4557}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -57,6 +59,30 @@ Global
 		{687B273A-25CB-4FE6-B1EB-087F49873D78}.Release|Windows Phone.ActiveCfg = Release|x86
 		{687B273A-25CB-4FE6-B1EB-087F49873D78}.Release|x86.ActiveCfg = Release|x86
 		{687B273A-25CB-4FE6-B1EB-087F49873D78}.Release|Xbox 360.ActiveCfg = Release|x86
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Mixed Platforms.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Mixed Platforms.Build.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Mixed Platforms.Deploy.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Windows Phone.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|x86.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Mixed Platforms.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Mixed Platforms.Build.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Mixed Platforms.Deploy.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Windows Phone.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|x86.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Xbox 360.Build.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Free|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Mixed Platforms.ActiveCfg = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Mixed Platforms.Build.0 = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Mixed Platforms.Deploy.0 = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Windows Phone.ActiveCfg = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|x86.ActiveCfg = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{343EAE5A-1009-4E5E-AACC-2378F5DF4557}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

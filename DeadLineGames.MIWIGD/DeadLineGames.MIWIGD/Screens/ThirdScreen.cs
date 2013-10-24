@@ -235,7 +235,7 @@ namespace DeadLineGames.MIWIGD.Screens
             parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
             parameters.Add(Consts.PARAMETERSCREEN, "Forth");
 
-            ScreenManager.TransitionTo("TransitionScreen");
+            ScreenManager.TransitionTo("TransitionScreen", parameters);
 
         }
 
@@ -426,6 +426,8 @@ namespace DeadLineGames.MIWIGD.Screens
                 DoMessages();
             }
 
+            ChangeSlide();
+
             base.Update(elapsed);
         }
         
@@ -468,16 +470,10 @@ namespace DeadLineGames.MIWIGD.Screens
         public override void CheckInput(TimeSpan elapsed)
         {
             base.Input = InputState.GetInputState();
-
-#if WINDOWS
-
             ObtenerTeclado((float)elapsed.TotalSeconds);            
-
-#endif
-
         }
         
-#if WINDOWS 
+
 
         private void ObtenerTeclado(float elapsed)
         {
@@ -485,24 +481,29 @@ namespace DeadLineGames.MIWIGD.Screens
 
             if (prota != null)
             {
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Left))
+                if (base.Input.KeyboardState.IsKeyDown(Keys.Left) ||
+                    (base.Input.GamepadOne.IsButtonDown(Buttons.LeftThumbstickLeft)))
                 {
                     prota.MoverIzquierda();
                 }
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Right))
+                if (base.Input.KeyboardState.IsKeyDown(Keys.Right)||
+                    base.Input.GamepadOne.IsButtonDown(Buttons.LeftThumbstickRight))
                 {
                     prota.MoverDerecha();
                 }
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Up))
+                if (base.Input.KeyboardState.IsKeyDown(Keys.Up)||
+                    base.Input.GamepadOne.IsButtonDown(Buttons.LeftThumbstickUp))
                 {
                     prota.MoverArriba();
                 }
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Down))
+                if (base.Input.KeyboardState.IsKeyDown(Keys.Down)||
+                    base.Input.GamepadOne.IsButtonDown(Buttons.LeftThumbstickDown))
                 {
                     prota.MoverAbajo();
                 }
 
-                if (base.Input.KeyboardState.IsKeyDown(Keys.Space))
+                if (base.Input.KeyboardState.IsKeyDown(Keys.Space)||
+                    base.Input.GamepadOne.IsButtonDown(Buttons.A))
                 {
                     prota.Shot(elapsed);
                 }
@@ -521,7 +522,7 @@ namespace DeadLineGames.MIWIGD.Screens
             
         }
 
-#endif
+
 
         /// <summary>
         /// Realiza el movimiento del prota.
@@ -582,6 +583,28 @@ namespace DeadLineGames.MIWIGD.Screens
             m_gamehub.Draw(base.SpriteBatch);
 
             base.Draw();
+        }
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SECOND_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Second");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Forth");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
         }
 
         #endregion

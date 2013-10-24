@@ -13,6 +13,7 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Input;
 using NamoCode.Game.Class.Input;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -38,7 +39,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Initialize()
         {
-            BasicTextures.FreeMemory();
+            //BasicTextures.FreeMemory();
 
             fondo = new AnimatedElement(base.Content.Load<Texture2D>("SixthScreen/Background"),
                 "fondo",
@@ -57,7 +58,7 @@ namespace DeadLineGames.MIWIGD.Screens
             Player.Instance.Sounds.Add(base.Content.Load<Song>("SixthScreen/Theme"), "Bugs");
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/gulp"), "Gulp");
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/burp"), "Burp");
-            Player.Instance.RepeatMusic = true;
+            Player.Instance.RepeatMusic = false;
             Player.Instance.Play("Bugs");
 
             base.Initialize();
@@ -106,6 +107,15 @@ namespace DeadLineGames.MIWIGD.Screens
                 Bugs.Instance.updateBugs(elapsed);
                 checkCollisions();
             }
+            else
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SEVENTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Seventh");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
+            ChangeSlide();
             base.Update(elapsed);
         }
 
@@ -145,6 +155,30 @@ namespace DeadLineGames.MIWIGD.Screens
                             EndScreen = true;
                     }
                 }
+            }
+        }
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.FIFTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Fifth");
+
+                Player.Instance.Stop();
+                ScreenManager.TransitionTo("TransitionScreen", parameters);                
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SEVENTH_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Seventh");
+
+                Player.Instance.Stop();
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
             }
         }
 
