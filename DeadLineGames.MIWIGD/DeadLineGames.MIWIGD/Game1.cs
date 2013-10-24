@@ -35,7 +35,6 @@ namespace DeadLineGames.MIWIGD
             set { m_clearColor = value; }
         }
 
-
         public Game1()
         {
             
@@ -61,13 +60,14 @@ namespace DeadLineGames.MIWIGD
         /// </summary>
         protected override void Initialize()
         {
+           
             // TODO: agregue aquí su lógica de inicialización
             m_Fondo = new BackGround(
-                   base.Content.Load<Texture2D>("Common/tv"),
-                   DesignOptions.Bounds);
+                    base.Content.Load<Texture2D>("Common/tv"),
+                    DesignOptions.Bounds);
 
             DesignOptions.Fuente = base.Content.Load<SpriteFont>("FirstScreen/PokemonFont");
-            
+
             base.Initialize();
 
             ScreenManager.TransitionTo("Menu");
@@ -79,6 +79,7 @@ namespace DeadLineGames.MIWIGD
         /// </summary>
         protected override void LoadContent()
         {
+
             // Crea un SpriteBatch nuevo para dibujar texturas.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 

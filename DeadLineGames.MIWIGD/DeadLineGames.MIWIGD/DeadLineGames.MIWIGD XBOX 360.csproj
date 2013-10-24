@@ -68,9 +68,6 @@
     <Compile Include="Objects\Common\Consts.cs" />
     <Compile Include="Objects\Common\Strings.cs" />
     <Compile Include="Objects\Common\TransitionScreen.cs" />
-    <Compile Include="Objects\EigthScreen\MailBox.cs" />
-    <Compile Include="Objects\EigthScreen\NewsPaper.cs" />
-    <Compile Include="Objects\EigthScreen\PaperBoy.cs" />
     <Compile Include="Objects\Enums.cs" />
     <Compile Include="Objects\FifthScreen\QTEPusher.cs" />
     <Compile Include="Objects\FirstScreen\Ash.cs" />
@@ -265,7 +262,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Objects\EigthScreen\" />
+  </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="Microsoft.Xna.Framework.Game" />
