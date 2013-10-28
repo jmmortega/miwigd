@@ -18,6 +18,9 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         public int actualFrame = 0;
         public bool activated { get; set; }
 
+        public delegate void HandleCoinUp(object sender, EventArgs e);
+        public event HandleCoinUp OnCoinUp;
+
         public Coin(String name, Vector2 posicion)
             : base(BasicTextures.GetTexture("Coin"),
             name,
@@ -33,6 +36,10 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
         {
             if (activated)
             {
+                if (OnCoinUp != null)
+                {
+                    OnCoinUp(this, new EventArgs());
+                }
                 this.Frames.Pause = false;
                 if (cont % 2 == 0)
                 {

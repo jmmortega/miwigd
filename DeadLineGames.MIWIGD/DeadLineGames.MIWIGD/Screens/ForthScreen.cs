@@ -63,7 +63,7 @@ namespace DeadLineGames.MIWIGD.Screens
                 pointerTexture,
                 "Pointer",
                 new Vector2(175 - pointerTexture.Width / 2, 50 - pointerTexture.Height / 2),
-                new Bounds(175,455,50,455));
+                new Bounds(175,455,50,425));
 
             m_pointer.InvalidMovement = EnumMovement.Izquierda;
             m_pointer.OnEndTravel += new Pointer.HandleEndTravel(EndTravelPointer);

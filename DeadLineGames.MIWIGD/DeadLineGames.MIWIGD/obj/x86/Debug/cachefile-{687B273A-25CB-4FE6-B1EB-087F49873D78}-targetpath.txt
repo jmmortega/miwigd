@@ -132,6 +132,9 @@ Content\SixthScreen\Pumba\burp.xnb
 Content\SixthScreen\Pumba\gulp.xnb
 Content\FifthScreen\punch.xnb
 Content\EighthScreen\swords.xnb
+Content\SeventhScreen\smw18.xnb
+Content\Credits\video.xnb
+Content\Credits\video.wmv
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
 Content\ThirdScreen\Level0.TXT

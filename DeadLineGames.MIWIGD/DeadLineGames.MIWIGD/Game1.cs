@@ -35,6 +35,14 @@ namespace DeadLineGames.MIWIGD
             set { m_clearColor = value; }
         }
 
+        private static bool m_tvOn = true;
+
+        public static bool TvOn
+        {
+            get { return Game1.m_tvOn; }
+            set { Game1.m_tvOn = value; }
+        }
+
         public Game1()
         {
             
@@ -93,9 +101,10 @@ namespace DeadLineGames.MIWIGD
             ScreenManager.AddScreen("Fifth", new FifthScreen(this));
             ScreenManager.AddScreen("Sixth", new SixthScreen(this));
             ScreenManager.AddScreen("Seventh", new SeventhScreen(this));
-            ScreenManager.AddScreen("Eight", new SeventhScreen(this));
+            ScreenManager.AddScreen("Eight", new EightScreen(this));
             ScreenManager.AddScreen("Nineth", new NinethScreen(this));
             ScreenManager.AddScreen("Tenth", new TenthScreenBis(this));
+            ScreenManager.AddScreen("Credits", new CreditsScreen(this));
 
             ScreenManager.AddScreen("TransitionScreen", new TransitionScreen(this));
         }
@@ -136,7 +145,11 @@ namespace DeadLineGames.MIWIGD
 
             // TODO: agregue aquí el código de dibujo
             ScreenManager.CurrentScreen.Draw();
-            m_Fondo.Draw(this.spriteBatch);
+
+            if (m_tvOn == true)
+            {
+                m_Fondo.Draw(this.spriteBatch);
+            }
 
             base.Draw(gameTime);
         }

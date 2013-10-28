@@ -29,7 +29,7 @@ namespace DeadLineGames.MIWIGD.Screens
         private Element m_winnerLabel;
         private Element m_winnerPosition;
         private bool m_endRace = false;
-
+        
         public NinethScreen(Game game)
             : base(game)
         { }
@@ -37,6 +37,7 @@ namespace DeadLineGames.MIWIGD.Screens
         public override void Initialize()
         {
             base.Initialize();
+            m_endRace = false;
 
             m_background = new BackGround(
                 base.Content.Load<Texture2D>("NinethScreen/TrackAndField"),
@@ -71,7 +72,7 @@ namespace DeadLineGames.MIWIGD.Screens
                 "Runner4",
                 new Vector2(-40, 250),
                 DesignOptions.Bounds,
-                new FrameRateInfo(12, 0.2f)));
+                new FrameRateInfo(12, 0.2f)));            
         }
 
         private bool firstPressed;
@@ -85,39 +86,42 @@ namespace DeadLineGames.MIWIGD.Screens
 
             base.Input = InputState.GetInputState();
 
-            if((base.Input.GamepadOne.IsButtonDown(Buttons.A) == true || base.Input.GamepadOne.IsButtonDown(Buttons.B) == true
-                || base.Input.GamepadOne.IsButtonDown(Buttons.Y) == true || base.Input.GamepadOne.IsButtonDown(Buttons.X) == true ||
-                base.Input.KeyboardState.IsKeyDown(Keys.A) == true) && firstPressed == false)                
+            if (m_endRace == false)
             {
-                m_runners.GetElement("Runner1").MoverDerecha();
-                firstPressed = true;
+                if ((base.Input.GamepadOne.IsButtonDown(Buttons.A) == true || base.Input.GamepadOne.IsButtonDown(Buttons.B) == true
+                    || base.Input.GamepadOne.IsButtonDown(Buttons.Y) == true || base.Input.GamepadOne.IsButtonDown(Buttons.X) == true ||
+                    base.Input.KeyboardState.IsKeyDown(Keys.A) == true) && firstPressed == false)
+                {
+                    m_runners.GetElement("Runner1").MoverDerecha();
+                    firstPressed = true;
+                }
+
+                if ((base.Input.GamepadTwo.IsButtonDown(Buttons.A) == true || base.Input.GamepadTwo.IsButtonDown(Buttons.B) == true
+                    || base.Input.GamepadTwo.IsButtonDown(Buttons.Y) == true || base.Input.GamepadTwo.IsButtonDown(Buttons.X) == true ||
+                    base.Input.KeyboardState.IsKeyDown(Keys.S) == true) && secondReleased == false)
+                {
+                    m_runners.GetElement("Runner2").MoverDerecha();
+                    secondReleased = true;
+                }
+
+                if ((base.Input.GamepadThree.IsButtonDown(Buttons.A) == true || base.Input.GamepadThree.IsButtonDown(Buttons.B) == true
+                    || base.Input.GamepadThree.IsButtonDown(Buttons.Y) == true || base.Input.GamepadThree.IsButtonDown(Buttons.X) == true ||
+                    base.Input.KeyboardState.IsKeyDown(Keys.D) == true) && thirdReleased == false)
+                {
+                    m_runners.GetElement("Runner3").MoverDerecha();
+                    thirdReleased = true;
+                }
+
+                if ((base.Input.GamepadFour.IsButtonDown(Buttons.A) == true || base.Input.GamepadFour.IsButtonDown(Buttons.B) == true
+                    || base.Input.GamepadFour.IsButtonDown(Buttons.Y) == true || base.Input.GamepadFour.IsButtonDown(Buttons.X) == true ||
+                    base.Input.KeyboardState.IsKeyDown(Keys.F) == true) && fourReleased == false)
+                {
+                    m_runners.GetElement("Runner4").MoverDerecha();
+                    fourReleased = true;
+                }
             }
 
-            if ((base.Input.GamepadTwo.IsButtonDown(Buttons.A) == true || base.Input.GamepadTwo.IsButtonDown(Buttons.B) == true
-                || base.Input.GamepadTwo.IsButtonDown(Buttons.Y) == true || base.Input.GamepadTwo.IsButtonDown(Buttons.X) == true ||
-                base.Input.KeyboardState.IsKeyDown(Keys.S) == true) && secondReleased == false)
-            {
-                m_runners.GetElement("Runner2").MoverDerecha();
-                secondReleased = true;
-            }
-
-            if ((base.Input.GamepadThree.IsButtonDown(Buttons.A) == true || base.Input.GamepadThree.IsButtonDown(Buttons.B) == true
-                || base.Input.GamepadThree.IsButtonDown(Buttons.Y) == true || base.Input.GamepadThree.IsButtonDown(Buttons.X) == true ||
-                base.Input.KeyboardState.IsKeyDown(Keys.D) == true) && thirdReleased == false)
-            {
-                m_runners.GetElement("Runner3").MoverDerecha();
-                thirdReleased = true;
-            }
-
-            if ((base.Input.GamepadFour.IsButtonDown(Buttons.A) == true || base.Input.GamepadFour.IsButtonDown(Buttons.B) == true
-                || base.Input.GamepadFour.IsButtonDown(Buttons.Y) == true || base.Input.GamepadFour.IsButtonDown(Buttons.X) == true ||
-                base.Input.KeyboardState.IsKeyDown(Keys.F) == true) && fourReleased == false)
-            {
-                m_runners.GetElement("Runner4").MoverDerecha();
-                fourReleased = true;
-            }
-
-            if (base.Input.GamepadOne.IsButtonDown(Buttons.A) && m_endRace == true)
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.Start) && m_endRace == true)
             {
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.TEN_TITLE);
@@ -131,6 +135,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
             ChangeSlide();
             Release();
+            CheckWinner();
 
             if (base.Input.KeyboardState.IsKeyDown(Keys.Escape) == true)
             {
@@ -185,26 +190,26 @@ namespace DeadLineGames.MIWIGD.Screens
                     if (nameRunner == "Runner1")
                     {
                         m_winnerPosition = new Element(base.Content.Load<Texture2D>("NinethScreen/FirstPosition"), "Position",
-                            new Vector2(120, 250));
+                            new Vector2(150, 250));
                     }
                     else if (nameRunner == "Runner2")
                     {
                         m_winnerPosition = new Element(base.Content.Load<Texture2D>("NinethScreen/SecondPosition"), "Position",
-                            new Vector2(120, 250));
+                            new Vector2(200, 250));
                     }
                     else if (nameRunner == "Runner3")
                     {
                         m_winnerPosition = new Element(base.Content.Load<Texture2D>("NinethScreen/ThirdPosition"), "Position",
-                            new Vector2(120, 250));
+                            new Vector2(250, 250));
                     }
                     else if (nameRunner == "Runner4")
                     {
                         m_winnerPosition = new Element(base.Content.Load<Texture2D>("NinethScreen/ForthPosition"), "Position",
-                            new Vector2(120, 250));
+                            new Vector2(300, 250));
                     }
 
                     m_endRace = true;
-                }
+                }                
             }
         }
 
@@ -214,7 +219,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
             m_background.Draw(base.SpriteBatch);
             m_runners.Draw(base.SpriteBatch);
-
+            
             if (m_endRace == true)
             {
                 m_winnerLabel.Draw(base.SpriteBatch);

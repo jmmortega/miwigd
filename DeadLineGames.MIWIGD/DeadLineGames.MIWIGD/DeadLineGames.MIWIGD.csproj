@@ -64,6 +64,7 @@
     <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
     <Reference Include="mscorlib" />
     <Reference Include="NamoCode.Game, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
@@ -79,6 +80,9 @@
     <Compile Include="Objects\Common\Consts.cs" />
     <Compile Include="Objects\Common\Strings.cs" />
     <Compile Include="Objects\Common\TransitionScreen.cs" />
+    <Compile Include="Objects\EigthScreen\Characters.cs" />
+    <Compile Include="Objects\EigthScreen\DialogGenerator.cs" />
+    <Compile Include="Objects\EigthScreen\Insults.cs" />
     <Compile Include="Objects\Enums.cs" />
     <Compile Include="Objects\FifthScreen\QTEPusher.cs" />
     <Compile Include="Objects\FirstScreen\Ash.cs" />
@@ -216,6 +220,7 @@
     <Compile Include="Objects\ThirdScreen\TrianguloNaranja.cs" />
     <Compile Include="Objects\ThirdScreen\TrianguloRosa.cs" />
     <Compile Include="Objects\ThirdScreen\TrianguloVerde.cs" />
+    <Compile Include="Screens\CreditsScreen.cs" />
     <Compile Include="Screens\TenthScreenBis.cs" />
     <Compile Include="Objects\TenthScreen\Finn.cs" />
     <Compile Include="Objects\TenthScreen\Jake.cs" />
@@ -278,9 +283,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\EigthScreen\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
   <!--

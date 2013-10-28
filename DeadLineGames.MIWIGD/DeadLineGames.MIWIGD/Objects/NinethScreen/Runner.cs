@@ -14,7 +14,7 @@ namespace DeadLineGames.MIWIGD.Objects.NinethScreen
         public Runner(Texture2D texture, string name, Vector2 position, Bounds bounds, FrameRateInfo frame)
             : base(texture, name, position, frame, bounds)
         {
-            base.Movimiento = 5;
+            base.Movimiento = 10;
             base.Frames.Auto = true;
             base.Frames.TypePlaying = EnumPlaying.Loop;
         }

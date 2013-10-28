@@ -58,7 +58,7 @@ namespace DeadLineGames.MIWIGD.Screens
             Player.Instance.Sounds.Add(base.Content.Load<Song>("SixthScreen/Theme"), "Bugs");
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/gulp"), "Gulp");
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SixthScreen/Pumba/burp"), "Burp");
-            Player.Instance.RepeatMusic = false;
+            Player.Instance.RepeatMusic = true;
             Player.Instance.Play("Bugs");
 
             base.Initialize();

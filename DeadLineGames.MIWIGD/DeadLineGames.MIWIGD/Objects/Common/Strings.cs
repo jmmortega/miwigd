@@ -52,5 +52,21 @@ namespace DeadLineGames.MIWIGD.Objects.Common
         //SecondScreen
 
         public const string DANGEROUS = "IT'S DANGEROUS TO GO \nALONE! TAKE THIS.";
+
+        public const string SWORD = "XNA / MONOGAME";
+
+        public const string BOOMERANG = "Unity3D";
+
+        public const string BOMB = "Cocos2D, Libgdx";
+
+        //Seventh Screen
+
+        public const string FIRSTCOIN = "Ads";
+
+        public const string SECONDCOIN = "In App purchases";
+
+        public const string THIRDCOIN = "Pay for app";
+
+        
     }
 }

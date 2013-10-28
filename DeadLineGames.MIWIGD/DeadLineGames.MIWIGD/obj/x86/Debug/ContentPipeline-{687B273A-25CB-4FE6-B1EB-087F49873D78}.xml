@@ -1151,6 +1151,25 @@
       <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\EighthScreen\swords.xnb</Output>
       <Time>2013-10-25T01:07:12.6030309+02:00</Time>
     </Item>
+    <Item>
+      <Source>SeventhScreen\smw18.png</Source>
+      <Name>SeventhScreen\smw18</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>FontTextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\smw18.xnb</Output>
+      <Time>2013-10-25T03:49:36+02:00</Time>
+    </Item>
+    <Item>
+      <Source>Credits\video.wmv</Source>
+      <Name>Credits\video</Name>
+      <Importer>WmvImporter</Importer>
+      <Processor>VideoProcessor</Processor>
+      <Options>None</Options>
+      <Output>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Credits\video.xnb</Output>
+      <Extra>E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Credits\video.wmv</Extra>
+      <Time>2013-10-25T03:39:45+02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{687B273A-25CB-4FE6-B1EB-087F49873D78}</ContentProjectGUID>

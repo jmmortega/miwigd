@@ -141,3 +141,6 @@ E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.exe
 E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\obj\x86\Debug\DeadLineGames.MIWIGD.pdb
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\SeventhScreen\smw18.xnb
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Credits\video.xnb
+E:\Projects\Games\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\DeadLineGames.MIWIGD\bin\x86\Debug\Content\Credits\video.wmv

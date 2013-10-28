@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DeadLineGames.MIWIGD</RootNamespace>
-    <AssemblyName>DeadLineGames.MIWIGD</AssemblyName>
+    <AssemblyName>MIWIGD</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
@@ -68,6 +68,9 @@
     <Compile Include="Objects\Common\Consts.cs" />
     <Compile Include="Objects\Common\Strings.cs" />
     <Compile Include="Objects\Common\TransitionScreen.cs" />
+    <Compile Include="Objects\EigthScreen\Characters.cs" />
+    <Compile Include="Objects\EigthScreen\DialogGenerator.cs" />
+    <Compile Include="Objects\EigthScreen\Insults.cs" />
     <Compile Include="Objects\Enums.cs" />
     <Compile Include="Objects\FifthScreen\QTEPusher.cs" />
     <Compile Include="Objects\FirstScreen\Ash.cs" />
@@ -205,6 +208,7 @@
     <Compile Include="Objects\ThirdScreen\TrianguloNaranja.cs" />
     <Compile Include="Objects\ThirdScreen\TrianguloRosa.cs" />
     <Compile Include="Objects\ThirdScreen\TrianguloVerde.cs" />
+    <Compile Include="Screens\CreditsScreen.cs" />
     <Compile Include="Screens\TenthScreenBis.cs" />
     <Compile Include="Objects\TenthScreen\Finn.cs" />
     <Compile Include="Objects\TenthScreen\Jake.cs" />
@@ -262,14 +266,13 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Objects\EigthScreen\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework" />
     <Reference Include="Microsoft.Xna.Framework.Game" />
     <Reference Include="Microsoft.Xna.Framework.GamerServices" />
     <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
     <Reference Include="mscorlib" />
     <Reference Include="NamoCode.Game, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="System" />

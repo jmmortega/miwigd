@@ -11,20 +11,37 @@ namespace DeadLineGames.MIWIGD.Objects.SeventhScreen
 {
     class Blocks : AObjects
     {
+        public delegate void HandleCoinUp(object sender, EventArgs e);
+        public event HandleCoinUp OnCoinUp;
 
         public Blocks()
             : base()
-        { 
-
+        {                             
             float posX = (DesignOptions.Bounds.MaxX - DesignOptions.Bounds.MinX) / 9;
             float posY = 243;
             for(int i = 0; i < 3; i++)
             {
-                this.Add(new Coin("Coin_Block_" + i, new Vector2((posX * ((i * 2) + 3)), posY))); 
+                //this.Add(new Coin("Coin_Block_" + i, new Vector2((posX * ((i * 2) + 3)), posY))); 
+
+                var coin = new Coin("Coin_Block_" + i, new Vector2((posX * ((i * 2) + 3)), posY));
+                coin.OnCoinUp += new Coin.HandleCoinUp(coin_OnCoinUp);
+
+                this.Add(coin);
+
                 this.Add(new Block("Block_" + i, new Vector2((posX * ((i * 2) + 3)), posY)));
             }
 
         }
+
+        private void coin_OnCoinUp(object sender, EventArgs e)
+        {
+            if (OnCoinUp != null)
+            {
+                OnCoinUp(sender, new EventArgs());
+            }
+        }
+
+        
 
         public void updateBlocks(TimeSpan elapsed, Mario mario)
         {

@@ -42,9 +42,9 @@ namespace DeadLineGames.MIWIGD.Objects.Common
             m_message.Color = Color.White;
 
             m_pressMessage = new ElementString(DesignOptions.Fuente, "Press", "Press button           to continue",
-                new Vector2(75, 300));
+                new Vector2(100, 300));
 
-            m_button = new Element(base.Content.Load<Texture2D>("Common/ControllerButtonA"), "ButtonA",new Vector2(280,290));
+            m_button = new Element(base.Content.Load<Texture2D>("Common/ControllerButtonA"), "ButtonA",new Vector2(305,290));
 
 
             (base.Game as Game1).ClearColor = Color.Black;

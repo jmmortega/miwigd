@@ -45,6 +45,8 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private int timeTyping;
         private int charType;
+        private int m_wordLenght;
+        private string m_textTyping;
         private int goodByeOldMan;
         private int weaponsCatch;
 
@@ -89,11 +91,11 @@ namespace DeadLineGames.MIWIGD.Screens
                 "TextTyping",
                 "",
                 new Vector2(DesignOptions.Bounds.MinX + 120, DesignOptions.Bounds.MinY + 80));
-            type.Font.Spacing = 3.5f;
-            charType = 0;
+            type.Font.Spacing = 3.5f;            
             timeTyping = 0;
             goodByeOldMan = 1;
             weaponsCatch = 0;
+            ChangeWord(Strings.DANGEROUS);
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<SoundEffect>("SecondScreen/Typing"), "Typing");
@@ -108,16 +110,26 @@ namespace DeadLineGames.MIWIGD.Screens
             ScreenManager.TransitionTo("Menu");
         }
 
+        private void ChangeWord(string word)
+        {
+            charType = 0;
+            m_wordLenght = word.Length;
+            m_textTyping = word;
+            type.LabelContent = string.Empty;
+        }
+
         public override void Update(TimeSpan elapsed)
         {
             if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Back))
                 this.GoMenu();
 
-            if (charType < Strings.DANGEROUS.Length)
+            //if (charType < Strings.DANGEROUS.Length)
+            if (charType < m_wordLenght)
             {
                 if (timeTyping % 4 == 0)
                 {
-                    type.LabelContent += Strings.DANGEROUS[charType];
+                    //type.LabelContent += Strings.DANGEROUS[charType];
+                    type.LabelContent += m_textTyping[charType];
                     Player.Instance.Play("Typing", 0.70f);
                     charType++;
                 }
@@ -133,8 +145,9 @@ namespace DeadLineGames.MIWIGD.Screens
                     {
                         if (w.catched)
                         {
+                            string nameWeapon = w.Name;
                             w.Dispose();
-                            Weapons.Remove(w);
+                            Weapons.Remove(w);                                                 
                             break;
                         }
                     }
@@ -142,7 +155,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
                 if (weaponsCatch == 3)
                 {
-                    type.Visible = false;
+                    //type.Visible = false;
                     oldMan.Opacity = 0.85f;
                     if (goodByeOldMan % TIMETOSAYGOODBYE == 0)
                         oldMan.Dispose();
@@ -196,11 +209,20 @@ namespace DeadLineGames.MIWIGD.Screens
                             link.catchWeapon(1);
                             w.SetPosicion(link.Posicion.X - 3,
                             link.Posicion.Y - w.Height);
+                            ChangeWord(Strings.SWORD);
                             break;
                         default: 
                             link.catchWeapon(2);
                             w.SetPosicion(link.Center.X - (w.Width / 2),
                             link.Posicion.Y - w.Height);
+                            if (w.Name == "Boomerang")
+                            {
+                                ChangeWord(Strings.BOOMERANG);
+                            }
+                            else if (w.Name == "Bomb")
+                            {
+                                ChangeWord(Strings.BOMB);
+                            }   
                             break;
                     }
                     w.catched = true;

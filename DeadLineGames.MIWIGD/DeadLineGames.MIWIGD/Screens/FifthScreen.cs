@@ -50,7 +50,7 @@ namespace DeadLineGames.MIWIGD.Screens
         public override void Initialize()
         {
             baseFrame = new FrameRateInfo(2, 0.80f, 2, true);
-            BasicTextures.FreeMemory();
+            //BasicTextures.FreeMemory();
             back = new AnimatedElement(base.Content.Load<Texture2D>("FifthScreen/programando"),
                 "back",
                 new Vector2(DesignOptions.Bounds.MinX, DesignOptions.Bounds.MinY),
@@ -143,7 +143,7 @@ namespace DeadLineGames.MIWIGD.Screens
             else
             {
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
+                parameters.Add(Consts.PARAMETERTITLE, Strings.SIXTH_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Sixth");
 
                 ScreenManager.TransitionTo("TransitionScreen", parameters);
@@ -235,6 +235,7 @@ namespace DeadLineGames.MIWIGD.Screens
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.FORTH_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Forth");
+                Player.Instance.Stop();
 
                 ScreenManager.TransitionTo("TransitionScreen", parameters);
             }
@@ -243,6 +244,7 @@ namespace DeadLineGames.MIWIGD.Screens
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.SIXTH_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Sixth");
+                Player.Instance.Stop();
 
                 ScreenManager.TransitionTo("TransitionScreen", parameters);
             }

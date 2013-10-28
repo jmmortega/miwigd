@@ -10,6 +10,9 @@ using NamoCode.Game.Class.Design;
 using NamoCode.Game.Utils;
 using Microsoft.Xna.Framework.Graphics;
 using DeadLineGames.MIWIGD.Objects.TenthScreen;
+using NamoCode.Game.Class.Input;
+using Microsoft.Xna.Framework.Input;
+using DeadLineGames.MIWIGD.Objects.Common;
 
 namespace DeadLineGames.MIWIGD.Screens
 {
@@ -30,7 +33,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         public override void Initialize()
         {
-            BasicTextures.FreeMemory();
+            //BasicTextures.FreeMemory();
 
             BasicTextures.CargarTextura("TenthScreen/dancing", "dancers");
             dancers = new Dancers(new Vector2(DesignOptions.Bounds.MinX,
@@ -59,6 +62,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             dancers.Update(elapsed);
             title.Update(elapsed);
+            ChangeSlide();
             base.Update(elapsed);
         }
 
@@ -68,6 +72,27 @@ namespace DeadLineGames.MIWIGD.Screens
             dancers.Draw(base.SpriteBatch);
             title.Draw(base.SpriteBatch);
             base.Draw();
+        }
+
+        private void ChangeSlide()
+        {
+            base.Input = InputState.GetInputState();
+
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            {
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.NINE_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Nineth");
+
+                Player.Instance.Stop();
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+                
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            {
+                Player.Instance.Stop();
+                ScreenManager.TransitionTo("Credits");
+            }
         }
     }
 }

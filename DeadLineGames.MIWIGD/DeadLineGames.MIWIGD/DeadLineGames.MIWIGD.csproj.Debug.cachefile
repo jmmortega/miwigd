@@ -125,6 +125,8 @@ Content\SixthScreen\Pumba\burp.xnb
 Content\SixthScreen\Pumba\gulp.xnb
 Content\FifthScreen\punch.xnb
 Content\EighthScreen\swords.xnb
+Content\SeventhScreen\smw18.xnb
+Content\Credits\video.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SixthScreen\Theme.wma
@@ -132,6 +134,7 @@ Content\TenthScreen\theme.wma
 Content\TenthScreen\theme2.wma
 Content\FirstScreen\PokemonTheme.wma
 Content\FifthScreen\theme.wma
+Content\Credits\video.wmv
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
 Content\ThirdScreen\Level0.TXT

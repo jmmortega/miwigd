@@ -26,6 +26,7 @@ namespace DeadLineGames.MIWIGD.Screens
         private AnimatedElement fondo;
         private Mario mario;
         private Blocks bloques;
+        private ElementString m_label;
 
         public SeventhScreen(Game game)
             : base(game)
@@ -47,6 +48,7 @@ namespace DeadLineGames.MIWIGD.Screens
             BasicTextures.CargarTextura("SeventhScreen/Coin", "Coin");
             BasicTextures.CargarTextura("SeventhScreen/block", "Block");
             bloques = new Blocks();
+            bloques.OnCoinUp += new Blocks.HandleCoinUp(bloques_OnCoinUp);
 
             Player.Instance.Sounds.Clear();
             Player.Instance.Sounds.Add(base.Content.Load<Song>("SeventhScreen/Theme"), "Mario");
@@ -56,8 +58,30 @@ namespace DeadLineGames.MIWIGD.Screens
             Player.Instance.Play("Mario");
 
             mario.OnMarioIsOut += new Mario.HandleMarioIsOut(MarioIsOut);
+
+            m_label = new ElementString(base.Content.Load<SpriteFont>("SeventhScreen/smw18"), "LabelExplaining");
+            m_label.Posicion = new Vector2(285, 220);
             
             base.Initialize();
+        }
+
+        private void bloques_OnCoinUp(object sender, EventArgs e)
+        {
+            Coin coin = (Coin)sender;
+
+            if (coin.Name == "Coin_Block_0")
+            {
+                m_label.LabelContent = Strings.FIRSTCOIN;
+            }
+            else if (coin.Name == "Coin_Block_1")
+            {
+                m_label.LabelContent = Strings.SECONDCOIN;
+            }
+            else if (coin.Name == "Coin_Block_2")
+            {
+                m_label.LabelContent = Strings.THIRDCOIN;
+            }
+
         }
 
         private void MarioIsOut(object sender, EventArgs e)
@@ -84,6 +108,7 @@ namespace DeadLineGames.MIWIGD.Screens
             mario.Draw(base.SpriteBatch);
             bloques.Draw(base.SpriteBatch);
             SeventhMap.Instance.Draw(base.SpriteBatch);
+            m_label.Draw(base.SpriteBatch);
             base.Draw();
         }
 
@@ -97,8 +122,8 @@ namespace DeadLineGames.MIWIGD.Screens
                 parameters.Add(Consts.PARAMETERTITLE, Strings.SIXTH_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Sixth");
 
-                ScreenManager.TransitionTo("TransitionScreen", parameters);
                 Player.Instance.Stop();
+                ScreenManager.TransitionTo("TransitionScreen", parameters);                
             }
             else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
             {
@@ -106,8 +131,8 @@ namespace DeadLineGames.MIWIGD.Screens
                 parameters.Add(Consts.PARAMETERTITLE, Strings.EIGHT_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Eight");
 
-                ScreenManager.TransitionTo("TransitionScreen", parameters);
                 Player.Instance.Stop();
+                ScreenManager.TransitionTo("TransitionScreen", parameters);                
             }
         }
 
