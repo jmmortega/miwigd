@@ -109,6 +109,7 @@ Content\EighthScreen\Pirate\chema-win.xnb
 Content\Common\ControllerButtonA.xnb
 Content\EighthScreen\start.xnb
 Content\SeventhScreen\smw18.xnb
+Content\MenuScreen\CodemotionEd.xnb
 Content\MenuScreen\TitleTheme.xnb
 Content\SeventhScreen\Theme.xnb
 Content\SixthScreen\Theme.xnb
@@ -126,8 +127,6 @@ Content\SixthScreen\Pumba\burp.xnb
 Content\SixthScreen\Pumba\gulp.xnb
 Content\FifthScreen\punch.xnb
 Content\EighthScreen\swords.xnb
-Content\Credits\video.xnb
-Content\MenuScreen\CodemotionEd.xnb
 Content\MenuScreen\TitleTheme.wma
 Content\SeventhScreen\Theme.wma
 Content\SixthScreen\Theme.wma
@@ -135,7 +134,6 @@ Content\TenthScreen\theme.wma
 Content\TenthScreen\theme2.wma
 Content\FirstScreen\PokemonTheme.wma
 Content\FifthScreen\theme.wma
-Content\Credits\video.wmv
 Content\SecondScreen\0.map
 Content\SeventhScreen\0.map
 Content\ThirdScreen\Level0.TXT
