@@ -33,7 +33,7 @@ namespace DeadLineGames.MIWIGD.Objects.Common
         //FirstScreen
 
         public const string DEVELOPERDIALOG = "Omaaaaa, que quiero desarrollar juego y ezo";
-        public const string MOMDIALOG = "Anda  nino, que disee, esperate que venga OakLindo y te ensene un par de coza";
+        public const string MOMDIALOG = "Anda  nino, que disee, esperate que venga OakNilla y te ensene un par de coza";
 
         public const string FIRSTOAK =
            "El  mundo de los developers esta lleno de frikazors, pero hay unos especiales al resto.";
@@ -46,18 +46,18 @@ namespace DeadLineGames.MIWIGD.Objects.Common
         public const string FORTHOAK =
             "Yo  se  que quieres convertirte en el MAYOR INDIE GAME DEVELOPER!!!";
 
-        public const string FIFTHOAK = "Por  eso te voy a ensenar como... O al menos hare el intento";
+        public const string FIFTHOAK = "Por  eso te voy a ensenar como y que puedas llegar a ser el mayor maestro Poke... que puedas estar en Otogami!";
 
 
         //SecondScreen
 
         public const string DANGEROUS = "IT'S DANGEROUS TO GO \nALONE! TAKE THIS.";
 
-        public const string SWORD = "XNA / MONOGAME";
+        public const string SWORD = "XNA-->MONOGAME";
 
         public const string BOOMERANG = "Unity3D";
 
-        public const string BOMB = "Cocos2D, Libgdx";
+        public const string BOMB = "Cocos2D, Libgdx...";
 
         //Seventh Screen
 

@@ -267,11 +267,11 @@ namespace DeadLineGames.MIWIGD.Screens
             base.Input = InputState.GetInputState();
 
 
-            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.Q))
             {
                 ScreenManager.TransitionTo("FirstScreenDetail");
             }
-            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.W))
             {
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.THIRD_TITLE);

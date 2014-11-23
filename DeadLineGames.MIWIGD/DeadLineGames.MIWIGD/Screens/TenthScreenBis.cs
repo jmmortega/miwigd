@@ -78,7 +78,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             base.Input = InputState.GetInputState();
 
-            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.Q))
             {
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.NINE_TITLE);
@@ -88,10 +88,11 @@ namespace DeadLineGames.MIWIGD.Screens
                 ScreenManager.TransitionTo("TransitionScreen", parameters);
                 
             }
-            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.W))
             {
                 Player.Instance.Stop();
-                ScreenManager.TransitionTo("Credits");
+                //ScreenManager.TransitionTo("Credits");
+                Game.Exit();
             }
         }
     }

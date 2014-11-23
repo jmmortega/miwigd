@@ -27,6 +27,7 @@ namespace DeadLineGames.MIWIGD.Screens
 
         private AnimatedElement title;
         private AnimatedElement start;
+        private Element _codemotionEd;
 
         private int timetoscroll = 0;
         private bool m_playedSong = false;
@@ -50,6 +51,11 @@ namespace DeadLineGames.MIWIGD.Screens
                 new FrameRateInfo(2, 0.50f));
             start.Posicion = new Vector2(334.5f - (start.Width / 2), DesignOptions.Bounds.MaxY - 64);
             start.Visible = false;
+
+            _codemotionEd = new Element(base.Content.Load<Texture2D>("MenuScreen/CodemotionEd"),
+                "edition",
+                new Vector2(260, DesignOptions.Bounds.MaxY - 100));
+            _codemotionEd.Visible = false;
             
             timetoscroll = 0;
             base.Initialize();
@@ -80,6 +86,7 @@ namespace DeadLineGames.MIWIGD.Screens
             }
             else
             {
+                _codemotionEd.Visible = true;
                 start.Visible = true;
                 if (InputState.GetInputState().GamepadOne.IsButtonDown(Buttons.Start) ||
                     InputState.GetInputState().KeyboardState.IsKeyDown(Keys.Enter))
@@ -108,6 +115,7 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             title.Draw(base.SpriteBatch);
             start.Draw(base.SpriteBatch);
+            _codemotionEd.Draw(base.SpriteBatch);
             base.Draw();
         }
 

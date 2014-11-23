@@ -230,19 +230,19 @@ namespace DeadLineGames.MIWIGD.Screens
         {
             base.Input = InputState.GetInputState();
 
-            if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) == true)
-            {
-                Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add(Consts.PARAMETERTITLE, Strings.NINE_TITLE);
-                parameters.Add(Consts.PARAMETERSCREEN, "Nineth");
-
-                ScreenManager.TransitionTo("TransitionScreen", parameters);
-            }
-            else if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) == true)
+            if (base.Input.GamepadOne.IsButtonDown(Buttons.LeftShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.Q))
             {
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add(Consts.PARAMETERTITLE, Strings.SEVENTH_TITLE);
                 parameters.Add(Consts.PARAMETERSCREEN, "Seventh");
+
+                ScreenManager.TransitionTo("TransitionScreen", parameters);
+            }
+            else if (base.Input.GamepadOne.IsButtonDown(Buttons.RightShoulder) || base.Input.KeyboardState.IsKeyDown(Keys.W))
+            {                
+                Dictionary<string, object> parameters = new Dictionary<string, object>();
+                parameters.Add(Consts.PARAMETERTITLE, Strings.NINE_TITLE);
+                parameters.Add(Consts.PARAMETERSCREEN, "Nineth");
 
                 ScreenManager.TransitionTo("TransitionScreen", parameters);
             }
